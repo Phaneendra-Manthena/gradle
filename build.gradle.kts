@@ -12,8 +12,8 @@ buildscript {
 
 allprojects {
     tasks.withType(JavaCompile) {
-        sourceCompatibility = JavaVersion.VERSION_16
-        targetCompatibility = JavaVersion.VERSION_16
+        sourceCompatibility = JavaVersion.VERSION_20
+        targetCompatibility = JavaVersion.VERSION_20
     }
 }
 
