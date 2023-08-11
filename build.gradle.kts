@@ -10,13 +10,6 @@ buildscript {
     }
 }
 
-allprojects {
-    tasks.withType(JavaCompile) {
-        sourceCompatibility = JavaVersion.VERSION_20
-        targetCompatibility = JavaVersion.VERSION_20
-    }
-}
-
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
