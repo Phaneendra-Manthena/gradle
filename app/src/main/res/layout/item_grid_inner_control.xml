@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:background="@drawable/rectangle_box_divider_color_grid_header"
+        android:gravity="center_vertical|start"
+        android:padding="@dimen/_6sdp"
+        android:text="@string/label"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_minus1sdp"
+        android:background="@drawable/rectangle_box_divider_grid"
+        android:id="@+id/ll_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"/>
+
+
+
+
+</LinearLayout>

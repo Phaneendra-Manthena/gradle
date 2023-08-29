@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="@dimen/dimen_50"
+            android:src="@drawable/ic_person_black_36dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_15"/>
+
+        <LinearLayout
+            android:id="@+id/rlmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+
+            android:layout_toEndOf="@+id/iv_circle"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="a"
+                android:textColor="@color/control_input_text_color"
+                android:textSize="@dimen/text_size_16"
+                app:customFont="@string/font_satoshi" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tvAppDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="visible"
+                android:text="@string/designation"
+                android:textColor="?attr/bhargo_color_eleven"
+                android:textSize="@dimen/text_size_14"
+                app:customFont="@string/font_satoshi" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

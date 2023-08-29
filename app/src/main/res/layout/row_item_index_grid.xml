@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_MainLayout_Check"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="@dimen/_2sdp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:foreground="?android:attr/selectableItemBackground"-->
+        <!--            app:cardBackgroundColor="@color/mat_white"-->
+        <!--            app:cardCornerRadius="2dp"-->
+        <!--            app:cardElevation="10dp"-->
+        <!--            app:cardUseCompatPadding="true">-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/mat_white"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_queryCheckImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@color/divider">
+
+                        <ImageView
+                            android:id="@+id/iv_imageControl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/LightGrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/ctv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/Red"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_1sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_1sdp"
+                            android:text="5 Kms"
+                            android:textColor="@color/mat_white" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ctv_MainHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Sample"
+                        android:textColor="@color/snack_bar_color"
+                        android:textSize="@dimen/_14sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llIndexColumns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

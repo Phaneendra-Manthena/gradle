@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alertTypeText"
+        style="@style/ErrorTextStyleDefault"
+        android:text="@string/error_text"
+        android:visibility="gone"
+        app:customFont="@string/font_satoshi" />
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_showText"
+        style="@style/CallMessageErrorTextStyle"
+        android:text="@string/error_text"
+        android:visibility="gone"
+        app:customFont="@string/font_satoshi" />
+</LinearLayout>

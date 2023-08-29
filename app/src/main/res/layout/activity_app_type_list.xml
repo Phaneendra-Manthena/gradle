@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.AppTypeListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+<com.bhargo.user.custom.CustomTextView
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:text="Compare"/>
+    <com.bhargo.user.custom.CustomEditText
+        android:id="@+id/cet_appsSearch"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="@string/search_apps"
+        android:textSize="@dimen/_10sdp"
+        app:customFont="@string/font_name"
+        android:background="@drawable/rounded_corners_border"
+        android:paddingRight="@dimen/_5sdp"
+        android:drawableRight="@drawable/quantum_ic_search_grey600_24"
+        android:gravity="start|center_vertical"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_appTypeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cet_appsSearch"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp" />
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_noRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:text="@string/no_records"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name" />
+    <com.bhargo.user.custom.CustomButton
+        android:id="@+id/cb_deploy"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="@color/red"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center|bottom"
+        android:layout_gravity="center|bottom"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/share"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textColor="@color/mat_white"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="visible"
+        app:customFont="@string/font_name" />
+</RelativeLayout>

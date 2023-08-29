@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_AppsListMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ViewDataActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/edittext_bg"
+        android:dropDownHeight="@dimen/_150sdp"
+        android:hint="@string/search"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actv_search"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_records"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:customFont="@string/font_name" />
+
+
+</RelativeLayout>

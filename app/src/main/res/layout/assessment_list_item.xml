@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_main_assessment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_qnototal"
+            android:text="0"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black_70"
+            android:gravity="start"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_QuestionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:hint="1)"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_12sdp"
+                app:customFont="@string/font_name_semi_bold" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What Is Organic Farming?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_name_semi_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ans_multipleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/rg_mc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rb_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One"
+                    android:textColor="@color/colorBlueHp"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rb_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two"
+                    android:textColor="@color/colorBlueHp"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rb_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Three"
+                    android:textColor="@color/colorBlueHp"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rb_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Four"
+                    android:textColor="@color/colorBlueHp"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ans_blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.bhargo.user.custom.CustomEditText
+                android:id="@+id/et_Blank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+
+                app:customFont="@string/font_name_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

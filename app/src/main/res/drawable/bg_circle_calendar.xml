@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid
+        android:color="?attr/bhargo_color_seven"/>
+
+    <size
+        android:width="@dimen/_5sdp"
+        android:height="@dimen/_5sdp"/>
+
+<!--    <solid android:color="@color/colorBlueHp"/>-->
+<!--&lt;!&ndash;    <corners android:radius="10dp"/>&ndash;&gt;-->
+<!--    <padding android:left="10dp"-->
+<!--        android:bottom="10dp"-->
+<!--        android:right="10dp"-->
+<!--        android:top="10dp"-->
+<!--        />-->
+</shape>

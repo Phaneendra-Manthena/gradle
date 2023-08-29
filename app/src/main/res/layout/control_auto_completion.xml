@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/individual_control_padding">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/ll_isEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_displayName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/displayName"
+                    android:textColor="@color/display_name_color"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_mandatory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top|center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_mandatory_star_red_24dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:hint="@string/hint"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_tap_text_with_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_tap_text"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_tapTextType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/tap_here"
+                        android:visibility="gone"
+                        android:textColor="@color/tap_text_color"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:orientation="vertical">
+                <fragment
+                    android:id="@+id/autocomplete_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    />
+                <AutoCompleteTextView
+                    android:id="@+id/act_user_search"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/tap_here"
+                    android:ems="10"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alertTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_mandatory_star_red_24dp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        app:customFont="@string/font_name" />
+
+</LinearLayout>

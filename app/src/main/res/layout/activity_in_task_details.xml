@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.InTaskDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_startTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_StartTimeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tvColonStart"
+            android:text="Start Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tvColonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_StartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvColonStart"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Start Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_endTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_startTime"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_StartEndTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tvColonEnd"
+            android:text="End Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tvColonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_EndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvColonEnd"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="End Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_endTime"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_priorityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tvColonp"
+            android:text="Priority"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tvColonp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvColonp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Priority"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name" />
+
+    </RelativeLayout>
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/appsAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_priority"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/round_rect_shape"
+        android:drawableRight="@drawable/arrow_spinner_s"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/applications"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name_semi_bold" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/contentAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_priority"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/round_rect_shape"
+        android:drawableRight="@drawable/arrow_spinner_s"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/content"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name_semi_bold" />
+
+    <RelativeLayout
+        android:id="@+id/ll_comments_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentAlert"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/rectangle_box_divider_dark_if"
+        android:orientation="vertical">
+
+<!--        <user.CustomTextView-->
+<!--            android:id="@+id/ctv_noRecords"-->
+<!--            android:text="No records!"-->
+<!--            android:gravity="center"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            app:customFont="@string/font_name_semi_bold"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_taskStatus" />
+
+        <LinearLayout
+
+            android:id="@+id/ll_taskStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_comment_box"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:gravity="right"
+                android:id="@+id/rg_TaskStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="Inprogress"
+                    android:id="@+id/rb_inProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold"/>
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="Completed"
+                    android:id="@+id/rb_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_comment_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomEditText
+                android:id="@+id/cet_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/_2sdp"
+                android:hint="Write comments"
+                android:layout_toLeftOf="@+id/btn_send_comment"
+                android:background="@drawable/rounded_corners_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp" />
+
+            <ImageButton
+                android:id="@+id/btn_send_comment"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/main_rounded_corners"
+                android:backgroundTint="@color/red"
+                android:contentDescription="@string/send_button"
+                android:src="@drawable/ic_send" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

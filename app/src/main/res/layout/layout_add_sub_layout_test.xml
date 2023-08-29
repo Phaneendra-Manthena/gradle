@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_subMainTest"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_margin="@dimen/_5sdp">
+</LinearLayout>
+

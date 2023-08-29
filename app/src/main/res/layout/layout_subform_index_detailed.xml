@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.bhargo.user.custom.CustomTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:ellipsize="end"
+        android:textColor="@color/control_input_text_color"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size_16"
+        app:customFont="@string/font_satoshi_bold" >
+    </com.bhargo.user.custom.CustomTextView>
+
+    <LinearLayout
+        android:id="@+id/subFormDataContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:id="@+id/vDisplayDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@color/detailed_page_divider_color" />
+
+
+
+</LinearLayout>

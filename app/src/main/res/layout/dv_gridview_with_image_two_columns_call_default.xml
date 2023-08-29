@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_item_main"
+    android:layout_height="@dimen/dimen_172"
+    android:layout_margin="@dimen/dimen_5"
+    android:background="@drawable/rounded_corners_dataviewer"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_dv_gitr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample1"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corner_bg_primary_color"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:customFont="@string/font_satoshi" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_gitr_Heading"
+                style="@style/dataViewerTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:text="@string/heading"
+                app:customFont="@string/font_satoshi_bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:gravity="center_vertical|start"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_call_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

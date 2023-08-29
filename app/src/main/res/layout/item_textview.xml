@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bhargo.user.custom.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:ellipsize="end"
+    android:textColor="@color/control_input_text_color"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textSize="@dimen/control_input_text_size"
+            app:customFont="@string/font_satoshi" >
+    </com.bhargo.user.custom.CustomTextView>
+
+

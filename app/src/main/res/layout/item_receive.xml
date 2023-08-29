@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_stick_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/chatdatetext_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/list_item_section_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/last_message_date"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:customFont="@string/font_name" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_stick_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="@drawable/background_left"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/layout_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/txtFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:text="a"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:customFont="@string/font_name" />
+
+            <LinearLayout
+                android:id="@+id/iv_audiofiledownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corners_file">
+
+                    <ProgressBar
+                        android:id="@+id/pb_audio_download_status"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/fbutton_color_green_sea"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/btnPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_file_download_black_24dp" />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBarAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:id="@+id/layout_file_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/_7sdp"
+                android:background="@drawable/rounded_corners_file">
+
+
+                <ImageView
+                    android:id="@+id/iv_filetype"
+                    android:layout_width="36dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icns_apps_chat" />
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_toLeftOf="@id/iv_filedownload"
+                    android:layout_toRightOf="@id/iv_filetype"
+                    android:gravity="center_vertical"
+                    android:text="a"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <FrameLayout
+                    android:id="@+id/iv_filedownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical">
+
+                    <ProgressBar
+                        android:id="@+id/pb_download_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTint="@color/fbutton_color_green_sea"
+                        android:visibility="gone" />
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_file_download_black_36dp"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="@dimen/_7sdp">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/textContentFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContentFriend"
+                android:layout_gravity="end">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_msg_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="end"
+                    android:text="@string/last_message_date"
+                    android:textSize="@dimen/_8sdp"
+                    android:visibility="invisible"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_msg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_msg_type"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:text="@string/last_message_date"
+                    android:textSize="@dimen/_8sdp"
+
+                    app:customFont="@string/font_name" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_message"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="@string/delivered"
+        android:visibility="gone" />
+
+</RelativeLayout>

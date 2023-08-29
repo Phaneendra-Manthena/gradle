@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.AssessmentActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_AssessmentQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_PN"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_below="@+id/toolbar"
+        android:nestedScrollingEnabled="false" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_PN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/btn_previousQ"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="Previous"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/mat_white"
+            app:customFont="@string/font_name_semi_bold" />
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/btn_nextQ"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/mat_white"
+            app:customFont="@string/font_name_semi_bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

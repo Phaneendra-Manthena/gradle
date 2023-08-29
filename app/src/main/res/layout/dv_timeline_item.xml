@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginBottom="-3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_circle_filled_orange" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_weight="6"
+            android:id="@+id/tv_gitr_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="Header 1"
+            android:textStyle="bold"
+            app:customFont="@string/font_name_semi_bold" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_weight="4"
+            android:id="@+id/tv_timeline_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="Thu, 13th Aug - 06:05pm"
+            app:customFont="@string/font_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_verticalLine"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_gravity="center"
+            android:background="@color/vertical_bar_color"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_60sdp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

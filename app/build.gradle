@@ -1,0 +1,186 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+}
+def apikeyProperties = new Properties()
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+apply plugin: 'realm-android'
+
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        applicationId "com.bhargo.user"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 3
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
+        buildConfigField("String", "YOUTUBE_API_KEY", apikeyProperties['YOUTUBE_API_KEY'])
+        consumerProguardFiles 'proguard-rules-consumer.pro'
+       
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a', 'arm64-v8a' // Include specific architectures
+            exclude 'x86', 'x86_64'            // Exclude specific architectures
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    // Or, if you prefer, you can continue to check for errors in release builds,
+    // but continue the build even when errors are found:
+    lintOptions {
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "1536m"
+    }
+    dataBinding {
+        enabled = true
+    }
+
+}
+realm {
+    syncEnabled = true
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.3'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation "com.google.android.material:material:1.6.0"
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation project(path: ':spinnerlib')
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+//    implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+//    implementation 'com.github.unaisulhadi:emojiratingbar:1.0.5'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'com.google.android.gms:play-services-identity:18.0.0'
+    //login
+    //Client ID:695107775565-106oj3vhp6fee07epv1gnkmu6qs44eur.apps.googleusercontent.com
+    //Client Secret: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
+    implementation 'com.google.android.gms:play-services-auth:20.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+    //implementation 'com.facebook.android:facebook-login:12'
+
+    // Dependencies for the REST API example
+    //implementation 'com.google.api-client:google-api-client:1.30.5'
+    //implementation 'com.google.api-client:google-api-client-android:1.30.5'
+    //implementation 'com.google.apis:google-api-services-people:v1-rev99-1.22.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation files('lib/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    implementation files('lib/exp4j-0.4.8.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation files('lib/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.google.firebase:firebase-config:21.2.0'
+
+    implementation 'com.google.firebase:firebase-core:20.0.2'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-analytics:20.0.2'
+
+
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0' //For Charts Implementation
+    implementation 'net.dankito.richtexteditor:richtexteditor-android:1.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    implementation 'com.karumi:dexter:6.2.3'
+    implementation 'ch.acra:acra:4.7.0'
+    implementation project(path: ':scanlibrary')
+    implementation project(path: ':bluefroglib')
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+    //implementation group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
+    //implementation 'org.apache.directory.studio:org.apache.commons.io:2.4'
+
+    //org.apache.commons.io.FileUtils.copyInputStreamToFile
+    //api 'com.google.android.gms:play-services-mlkit-text-recognition:16.2.0'
+    //implementation 'com.gdacciaro:iosdialog:1.0.3'
+    implementation project(path: ':compressvideo')
+    // implementation project(path: ':videoplayer')
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.1'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.18.1'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.16'
+    implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.16'
+    implementation files('lib/itextg-5.5.4.jar')
+    implementation 'com.thoughtbot:expandablerecyclerview:1.0'
+    implementation files('lib/java-json.jar')
+    implementation 'org.locationtech.jts:jts-core:1.19.0'
+    implementation 'com.github.elirehema:worksheet:0.0.1'
+    //implementation 'org.simpleframework:simple-xml:2.7.1'
+    //implementation 'com.thaiopensource:trang:20181222'
+    /*implementation 'org.json:json:20210307'
+    implementation 'org.jsonschema2pojo:jsonschema2pojo-core:1.1.1'
+    // Other dependencies...
+    configurations {
+        all {
+            exclude group: 'org.json', module: 'json'
+        }
+    }*/
+}
+
+apply plugin: 'com.google.gms.google-services'

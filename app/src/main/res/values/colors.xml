@@ -1,0 +1,378 @@
+<resources>
+
+   
+    <color name="colorPrimary">#dcc9c9</color>
+    <color name="colorPrimaryDark">#be0707</color>
+    <color name="colorPrimaryLight">#b54e4e</color>
+    <color name="colorAccent">#707B8A</color>
+   <color name="theme_bhargo_text_color1">@color/display_text_color</color>
+   <color name="theme_bhargo_six">#afafab</color>
+   <color name="theme_bhargo_seven">@color/control_input_text_color</color>
+   <color name="theme_bhargo_eight">@color/description_color</color>
+   <color name="theme_bhargo_nine">#FFFFFF</color>
+   <color name="theme_bhargo_ten">@color/hint_color</color>
+   <color name="theme_bhargo_eleven">#EFF0F6</color>
+   <color name="theme_bhargo_twelve">@color/rating_default</color>
+   <color name="theme_bhargo_thirteen">@color/default_gray</color>
+
+
+    
+    <color name="colorPrimaryTheme2">#8C33FD</color> 
+    <color name="colorPrimaryDarkTheme2">#6614CE</color>
+    <color name="colorPrimaryLightTheme2">#E5D1FF</color>
+    <color name="colorAccentTheme2">#707B8A</color>
+   <color name="theme_bhargo_text_color2">@color/display_text_color</color>
+   <color name="theme_bhargo_six2">#afafab</color>
+   <color name="theme_bhargo_seven2">@color/control_input_text_color</color>
+   <color name="theme_bhargo_eight2">@color/description_color</color>
+   <color name="theme_bhargo_nine2">#FFFFFF</color>
+   <color name="theme_bhargo_ten2">#5d5f5a</color>
+   <color name="theme_bhargo_eleven2">#F9F5FF</color>
+   <color name="theme_bhargo_twelve2">@color/theme_bhargo_eleven2</color>
+   <color name="theme_bhargo_thirteen2">@color/default_gray</color>
+    
+    <color name="colorPrimaryTheme3">#FF5E3A</color>
+    <color name="colorPrimaryDarkTheme3">#DD3611</color>
+    <color name="colorPrimaryLightTheme3">#FFCCC1</color>
+    <color name="colorAccentTheme3">#707B8A</color>
+   <color name="theme_bhargo_text_color3">@color/display_text_color</color>
+   <color name="theme_bhargo_six3">#afafab</color>
+   <color name="theme_bhargo_seven3">@color/control_input_text_color</color>
+   <color name="theme_bhargo_eight3">@color/description_color</color>
+   <color name="theme_bhargo_nine3">#FFFFFF</color>
+   <color name="theme_bhargo_ten3">#5d5f5a</color>
+   <color name="theme_bhargo_eleven3">#F6F4F3</color>
+   <color name="theme_bhargo_twelve3">@color/theme_bhargo_eleven3</color>
+   <color name="theme_bhargo_thirteen3">@color/default_gray</color>
+    
+    <color name="colorPrimaryTheme4">#33A8FD</color>
+    <color name="colorPrimaryDarkTheme4">#1188DE</color>
+    <color name="colorPrimaryLightTheme4">#BAE2FF</color>
+    <color name="colorAccentTheme4">#707B8A</color>
+   <color name="theme_bhargo_text_color4">@color/display_text_color</color>
+   <color name="theme_bhargo_six4">#afafab</color>
+   <color name="theme_bhargo_seven4">@color/control_input_text_color</color>
+   <color name="theme_bhargo_eight4">@color/description_color</color>
+   <color name="theme_bhargo_nine4">#FFFFFF</color>
+   <color name="theme_bhargo_ten4">#5d5f5a</color>
+   <color name="theme_bhargo_eleven4">#F6F4F3</color>
+   <color name="theme_bhargo_twelve4">@color/theme_bhargo_eleven4</color>
+   <color name="theme_bhargo_thirteen4">@color/default_gray</color>
+    
+    <color name="colorPrimaryTheme5">#37CAB9</color>
+    <color name="colorPrimaryDarkTheme5">#18BAA7</color>
+    <color name="colorPrimaryLightTheme5">#C2FCF5</color>
+    <color name="colorAccentTheme5">#707B8A</color>
+   <color name="theme_bhargo_text_color5">@color/display_text_color</color>
+   <color name="theme_bhargo_six5">#afafab</color>
+   <color name="theme_bhargo_seven5">@color/control_input_text_color</color> 
+   <color name="theme_bhargo_eight5">@color/description_color</color>
+   <color name="theme_bhargo_nine5">#FFFFFF</color>
+   <color name="theme_bhargo_ten5">#5d5f5a</color>
+   <color name="theme_bhargo_eleven5">#EFF1F1</color>
+   <color name="theme_bhargo_twelve5">@color/theme_bhargo_eleven5</color>
+   <color name="theme_bhargo_thirteen5">@color/default_gray</color>
+    
+    <color name="colorPrimaryTheme6">#14B67F</color>
+    <color name="colorPrimaryDarkTheme6">#079A68</color>
+    <color name="colorPrimaryLightTheme6">#BDEDDD</color>
+    <color name="colorAccentTheme6">#707B8A</color>
+   <color name="theme_bhargo_text_color6">@color/display_text_color</color>
+   <color name="theme_bhargo_six6">#afafab</color>
+   <color name="theme_bhargo_seven6">@color/control_input_text_color</color> 
+   <color name="theme_bhargo_eight6">@color/description_color</color>
+   <color name="theme_bhargo_nine6">#FFFFFF</color>
+   <color name="theme_bhargo_ten6">@color/hint_color</color>
+   <color name="theme_bhargo_eleven6">#EFF4F2</color>
+   <color name="theme_bhargo_twelve6">@color/theme_bhargo_eleven6</color>
+   <color name="theme_bhargo_thirteen6">@color/default_gray</color>
+    
+    <color name="colorPrimaryTheme7">#0277FA</color>
+    <color name="colorPrimaryDarkTheme7">#023D7C</color>
+    <color name="colorPrimaryLightTheme7">#D3E8FF</color>
+    <color name="colorAccentTheme7">#707B8A</color>
+   <color name="theme_bhargo_text_color7">@color/display_text_color</color>
+   <color name="theme_bhargo_six7">#afafab</color>
+   <color name="theme_bhargo_seven7">@color/control_input_text_color</color> 
+   <color name="theme_bhargo_eight7">@color/description_color</color>
+   <color name="theme_bhargo_nine7">#FFFFFF</color>
+   <color name="theme_bhargo_ten7">#5d5f5a</color>
+   <color name="theme_bhargo_eleven7">#ECEEF1</color>
+   <color name="theme_bhargo_twelve7">@color/theme_bhargo_eleven7</color>
+   <color name="theme_bhargo_thirteen7">@color/default_gray</color>
+
+ 
+ <color name="theme_bhargo_color_one">#ff5e3a</color>
+ <color name="theme_bhargo_color_two">#374A66</color>
+
+ <color name="theme_bhargo_color_three">#707b8a</color>
+ <color name="theme_bhargo_color_four">@color/bhargo_color_four</color>
+ <color name="theme_bhargo_color_five">@color/display_text_color</color>
+
+    <color name="red">@color/colorPrimaryDark</color>
+    <color name="ev_green">#4CAE4C</color>
+
+    <color name="black">#000000</color>
+    <color name="ev_bg">#ecf0f1</color>
+
+
+    <color name="poppy">#FF420E</color>
+    <color name="waterfall">#68829e</color>
+    <color name="white">#ffffff</color>
+    <color name="orange_trans_50">#77f39c12</color>
+
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#d3d5d6</color>
+    <color name="buttonWarning">#f0ad4e</color>
+    <color name="buttonPrimary">#337ab7</color>
+    <color name="buttonDanger">#AFB42B</color>
+    <color name="buttonInfo">#AFB42B</color>
+    <color name="buttonSuccess">#5cb85c</color>
+    <color name="buttonDefault">#AFB42B</color>
+    <color name="textcolor">#fff</color>
+    <color name="edittextcolor">#fff</color>
+    <color name="colortext">#100b20</color>
+    <color name="hinttextcolor">#7B7E81</color>
+
+    
+    <color name="transparentBlack">#64000000</color>
+    <color name="transparent">@null</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="white_trans_85">#D9FFFFFF</color>
+
+
+    <color name="black_70">#B30F1928</color>
+    <color name="text_color">#696969</color>
+
+
+    <color name="divider">#E3E6EB</color>
+    <color name="divider2">#7f8c8d</color>
+    <color name="blue">#2EA8ED</color>
+    <color name="lightbluecolor">#92dff3</color>
+    <color name="dullGray">#B5B5C9</color>
+
+    <color name="cancel_red">#D43F3A</color>
+    <color name="success_green">#4CAE4C</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="statementcolor">#778AA6</color>
+    <color name="pressed">#B5B5C9</color>
+    <color name="mat_black">#000000</color>
+    <color name="mat_white">#ffffff</color>
+    <color name="bg_trans">#07000000</color>
+    <color name="dashbg">#333333</color>
+    <color name="semi_transparent">#40000000</color>
+    <color name="semi_transparent_green">#404CAE4C</color>
+    <color name="text_title_color">#737377</color>
+    <color name="color_tv_header">#afafab</color>
+    <color name="white_trans_45">#f1f1f1</color>
+    <color name="white_trans_30">#4DFFFFFF</color>
+    <color name="layout_bg">#e1e1e1</color>
+
+    <color name="layout_dataentry_bg">#C5CAE9</color>
+    <color name="error_bg_color">#f9e6e1</color>
+
+    <color name="text_header_color">#555</color>
+    <color name="splash_image_color">#5BA55A</color>
+    <color name="on_road_green">#24c88F</color>
+    <color name="on_road_green_new">#A4EAD2</color>
+
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+    <color name="bg">#EAECEC</color>
+    <color name="date_icon_bg">#c1c1c1</color>
+    <color name="snack_bar_color">#BFf44336</color>
+    <color name="snack_bar_color_70">#B3f44336</color>
+    <color name="orange_light">@color/poppy</color>
+    
+    <color name="dashboard">#e2ecf6</color>
+
+    <color name="dblue">#FF005a9c</color>
+    <color name="lightBlue">#ff6691c4</color>
+    <color name="lighterBlue">#ffcdd8ec</color>
+    <color name="error_toast">#f23e44</color>
+    <color name="success_toast">#249924</color>
+    <color name="normal_toast">#FF005a9c</color>
+
+
+    <color name="Gray">#A9A9A9</color>
+
+    <color name="DarkGray">#808080</color>
+
+    <color name="LightGrey">#D3D3D3</color>
+
+    <color name="EvenLightGrey">#EBE4E4</color>
+
+    <color name="EvenMoreLightGrey">#DAD2D2</color>
+    <color name="chat_divider">#90DAD2D2</color>
+
+    <color name="PowderBlue">#B0E0E6</color>
+
+    <color name="LightSteelBlue">#B0C4DE</color>
+
+    <color name="PaleTurquoise">#AFEEEE</color>
+
+    <color name="LightBlue">#ADD8E6</color>
+
+    <color name="Lime">#00FF00</color>
+
+    <color name="Black">#000000</color>
+
+    <color name="Red">#ee252d</color>
+
+    <color name="colorBlue">#1388EC</color>
+    <color name="colorBlueHp">#0095D9</color>
+    <color name="colorBlue_gradient_end">#687ee1</color>
+    <color name="colorBlue_gradient_start">#9bacf4</color>
+    <color name="colorText">#212E5B</color>
+    <color name="colorTextLight">#FF4D62AA</color>
+    <color name="control_divider">#FFEEF1F5</color>
+    <color name="keyboard_blue">#2e78b6</color>
+    <color name="keyboard_blue_pressed">#73A8D5</color>
+    <color name="keyboard_orange">#ffa68d</color>
+    <color name="keyboard_orange_pressed">#CE755C</color>
+    <color name="keyboard_DarkBrown">#FFCA7C10</color>
+    <color name="keyboard_red">#f12849</color>
+    <color name="keyboard_green">#39b54a</color>
+    <color name="keyboard_green_numbers">#a3d39c</color>
+    <color name="keyboard_green_numbers_pressed">#70CE62</color>
+    <color name="keyboard_space">#d6d7d7</color>
+    <color name="keyboard_arithmetic_color">#5fdfaf</color>
+    <color name="keyboard_arithmetic_color_light">#B3ECD7</color>
+    <color name="keyboard_arithmetic_color_pressed">#19C786</color>
+    <color name="mainactivity_bg">#e8e8e8</color>
+
+    <color name="display_name_color">#353535</color>
+    <color name="hint_color">#5d5f5a</color>
+    <color name="tap_text_color">#737373</color>
+    <color name="unread_text_color">#d72631</color>
+    <color name="black_shade">#333333</color>
+    <color name="section_header_bg">#ffae42</color>
+    <color name="multicomment_header_bg">#ffae42</color>
+
+    <color name="buttonBlue">#1F41E4</color>
+
+    <color name="transparent_75_white">#ACFFFFFF</color>
+    <color name="transparent_50_black">#5F000000</color>
+    <color name="black_light">#CC222222</color>
+    <color name="dark_black">#FF333333</color>
+    <color name="vertical_bar_color">#ff7405</color>
+
+
+
+
+
+
+    <color name="dv_bg_color">@color/keyboard_blue_pressed</color>
+
+    
+    
+    
+    <color name="main_bg_color">#f4f7fe</color>
+    <color name="view_bg_color">#c6e2ff</color>
+    <color name="ev_item_bg_color">#f8f9fc</color>
+    <color name="ev_blue">#04346c</color>
+    <color name="colorSuccess">@color/success_green</color>
+    <color name="colorWarning">@color/colorPrimary</color>
+    <color name="colorError">@color/Red</color>
+    <color name="colorNeutral">@color/colorPrimary</color>
+    <color name="up_help_desk_one">#ff9201</color>
+    <color name="up_help_desk_two">#7d0340</color>
+    <color name="main_layout_bg">#eff0f6</color>
+
+    //New Control Design
+    <color name="bottom_sheet_bg">#0d1024</color>
+    <color name="bhargo_color_four">@color/description_color</color>
+    <color name="detailed_page_display_text_color">@color/description_color</color>
+    <color name="detailed_page_divider_color">#f1f1f8</color>
+    <color name="apps_list_phno_text_color">@color/description_color</color>
+
+    <color name="display_text_color">#5a636d</color>
+    <color name="control_input_background_color">@color/control_input_text_color</color>
+    <color name="control_input_text_color">#374a66</color>
+    <color name="control_disable_color">#f0f0f0</color>
+    <color name="control_error_color">#f18181</color>
+    <color name="control_default_color">@color/description_color</color>
+    <color name="control_active_color">@color/control_input_text_color</color>
+    <color name="control_disable_bg_color">#a2a2a2</color>
+    <color name="control_disable_text_color">#787878</color>
+    <color name="control_radio_button_item">@color/description_color</color>
+    <color name="control_radio_button_selected">#596ce8</color>
+    <color name="control_radio_button_default">@color/description_color</color>
+
+    <color name="control_calendar_text_color">@color/control_input_text_color</color>
+    <color name="control_calendar_selected_text_color">#ffffff</color>
+    <color name="control_calendar_selected_bg_color">#596ce8</color>
+    <color name="subform_bg_deafult">#e1e1e1</color>
+    <color name="bhargo_color_five">@color/description_color</color>
+    <color name="rectangle_bg_active">@color/control_input_text_color</color>
+    <color name="cicular_bg_stroke">#aec0e1</color>
+    <color name="cicular_bg_solid">@color/default_gray</color>
+    <color name="transparent_color_grey">#c4c4c4</color>
+    <color name="rating_default">#e5e9f6</color>
+    <color name="rating_activated">#606cec</color>
+    <color name="login_mobile_no">@color/control_input_text_color</color>
+    <color name="login_mobile_no_hint">#7e91b3</color>
+    <color name="otp_bg">#cddaf3</color>
+    <color name="otp_blue">#596ce8</color>
+
+    <color name="apps_list_bg">#fafaff</color>
+    <color name="apps_list_card_designation_bg">#e5e9ff</color>
+    <color name="default_gray">#f1f5fb</color>
+    <color name="search_hint">#7e91bg</color>
+    <color name="delete_icon_bg">#fff1f1</color>
+    <color name="delete_icon">#f18181</color>
+    <color name="resend_otp">#c9d0ff</color>
+    <color name="profile_divider">#f1f1f8</color>
+    <color name="time_line">#e9ecff</color>
+
+    <color name="attachment_color_one">#02b209</color>
+    <color name="attachment_color_two">#a604c0</color>
+    <color name="attachment_color_three">#c004a2</color>
+    <color name="attachment_color_four">#6d04c0</color>
+    <color name="attachment_color_five">#04b5c0</color>
+    <color name="attachment_color_six">#eab600</color>
+    <color name="message_date_bg">#ecf2fb</color>
+
+
+    //Data Viewer Default Colors
+    <color name="description_color">#707b8a</color>
+    <color name="default_green_color">#04ae0b</color>
+    <color name="default_divider">#f1f3ff</color>
+    <color name="unanswered">#ebb804</color>
+    <color name="wrong_answer_bg">#ffecec</color>
+    <color name="wrong_answer_text">#f18181</color>
+    <color name="right_answer_bg">#e9ffe5</color>
+    <color name="item_selected_bg">#E5E9FF</color>
+    <color name="item_non_active_dot">#B8BEC6</color>
+
+    
+
+
+ <color name="control_border_color">@color/default_green_color</color>
+
+   <color name="light_grey">#fbfbfb</color>
+   <color name="light_pink">#fff2fd</color>
+   <color name="light_blue">#f1fcff</color>
+   <color name="theme_control_active_color">@color/control_border_color</color>
+   <color name="purple_700">#FF3700B3</color>
+   <color name="purple_200">#FFBB86FC</color>
+</resources>

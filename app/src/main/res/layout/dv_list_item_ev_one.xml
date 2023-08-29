@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_main"
+android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+app:cardBackgroundColor="#ecf0f1"
+        app:cardPreventCornerOverlap="false"
+
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <com.bhargo.user.utils.RoundishImageView
+                    android:id="@+id/iv_ev_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:cornerRadius="8dp"
+                    app:roundedCorners="topLeft|topRight"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_ev_Heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Heading"
+                        android:textColor="?attr/bhargo_color_ten"
+                        app:customFont="@string/font_satoshi_bold"
+                        android:textSize="@dimen/_12sdp"/>
+                    <RelativeLayout
+                        android:id="@+id/ll_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_below="@+id/tv_ev_Heading"
+                        android:orientation="horizontal">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs."
+                            android:textColor="?attr/bhargo_color_ten"
+                            android:textSize="@dimen/_8sdp"
+                            android:id="@+id/currency"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical|start"
+                            app:customFont="@string/font_satoshi_bold"/>
+
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_ev_SubHeading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/currency"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="Sub Heading"
+                            android:textColor="?attr/bhargo_color_ten"
+                            android:textSize="@dimen/_10sdp"
+                            app:customFont="@string/font_satoshi_bold" />
+                        <com.bhargo.user.custom.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv_ev_SubHeading"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="   onwards"
+                            android:textColor="?attr/bhargo_color_eleven"
+                            android:textSize="@dimen/_8sdp"
+                            app:customFont="@string/font_satoshi" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_price"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:src="@drawable/rating"
+                            android:backgroundTint="?attr/bhargo_color_one"
+                            android:id="@+id/rating"
+                            />
+
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="rating"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:textSize="@dimen/_9sdp"
+                            android:textColor="?attr/bhargo_color_ten"
+                            app:customFont="@string/font_satoshi_bold" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

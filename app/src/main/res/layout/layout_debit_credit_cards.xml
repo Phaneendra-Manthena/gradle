@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_insideCards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5"
+    android:visibility="gone">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/cnHint"
+        style="@style/dataViewerTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginEnd="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Card Number"
+        android:textSize="@dimen/sub_header_size"
+        app:customFont="@string/font_satoshi_bold" />
+
+    <com.bhargo.user.custom.CustomEditText
+        android:id="@+id/ce_cardNumber"
+        style="@style/ControlInputStyle"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:background="@drawable/rounded_corners_default_white_bg_black"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLines="1"
+        app:customFont="@string/font_satoshi" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/chnHint"
+        style="@style/dataViewerTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Card Holder's Name"
+        android:textSize="@dimen/sub_header_size"
+        app:customFont="@string/font_satoshi_bold" />
+
+    <com.bhargo.user.custom.CustomEditText
+        android:id="@+id/ce_cardName"
+        style="@style/ControlInputStyle"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:background="@drawable/rounded_corners_default_white_bg_black"
+        android:hint="Card Holder's Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:customFont="@string/font_satoshi" />
+
+    <LinearLayout
+        android:id="@+id/ll_dc_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/expiryHint"
+            style="@style/dataViewerTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Expiry"
+            android:textSize="@dimen/sub_header_size"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <com.bhargo.user.custom.CustomTextView
+            style="@style/dataViewerTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_weight="0.3"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="CVV"
+            android:textSize="@dimen/text_size_16"
+            app:customFont="@string/font_satoshi_bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/ce_expiry"
+            style="@style/ControlInputStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_weight="0.6"
+            android:background="@drawable/rounded_corners_default_white_bg_black"
+            android:hint="Expiry (MM/ YY)"
+            android:inputType="datetime"
+            android:maxLines="1"
+            app:customFont="@string/font_satoshi" />
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/ce_cvv"
+            style="@style/ControlInputStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_weight="0.4"
+            android:background="@drawable/rounded_corners_default_white_bg_black"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="@dimen/dimen_16"
+            app:customFont="@string/font_satoshi" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

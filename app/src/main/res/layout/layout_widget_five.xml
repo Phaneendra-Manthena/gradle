@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_5"
+    android:elevation="@dimen/dimen_5"
+    android:background="@drawable/rounded_corners_default_white_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gitr_Heading"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorPrimary"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/heading"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_gitr_SubHeading"
+                android:layout_height="wrap_content"
+                style="@style/dataViewerTextStyle"
+                android:gravity="center_vertical|end"
+                android:textColor="@color/bhargo_color_four"
+                android:layout_marginBottom="@dimen/dimen_10"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/heading"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/detailed_page_divider_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/sub_item_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:textColor="@color/keyboard_green"
+                android:textSize="@dimen/text_size_18"/>
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/item_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textColor="@color/keyboard_green"
+                android:textSize="@dimen/text_size_18"/>
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/percentage_spl_char"
+                android:textColor="@color/keyboard_green"
+                android:textSize="@dimen/text_size_18"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="table_layout_4_open" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="table_layout_4_open_shortcut" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="table_layout_4_save" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="table_layout_4_save_shortcut" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Open..."
+                android:padding="3dip" />
+            <TextView
+                android:text="Ctrl-O"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Save..."
+                android:padding="3dip" />
+            <TextView
+                android:text="Ctrl-S"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Save As..."
+                android:padding="3dip" />
+            <TextView
+                android:text="Ctrl-Shift-S"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:text="X"
+                android:padding="3dip" />
+            <TextView
+                android:text="Import..."
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="X"
+                android:padding="3dip" />
+            <TextView
+                android:text="Export..."
+                android:padding="3dip" />
+            <TextView
+                android:text="Ctrl-E"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Quit"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:id="@+id/info"
+                android:layout_span="2"
+
+                android:text="some text"
+                android:padding="3dip"
+                android:layout_gravity="center_horizontal" />
+            <TextView android:text="some other text"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="some other text"
+                android:padding="3dip" />
+            <TextView android:text="more text"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

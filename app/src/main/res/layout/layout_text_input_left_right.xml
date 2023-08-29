@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_leftRightWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <include
+                layout="@layout/layout_display_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                android:id="@+id/layout_control"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/control_input_height"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_tap_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/control_with_radius_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_tapTextType"
+                            style="@style/ControlInputStyle"
+                            android:focusable="false"
+                            android:text="@string/tap_here"
+                            android:visibility="visible"
+                            app:customFont="@string/font_satoshi" />
+
+                        <com.bhargo.user.custom.CustomEditText
+                            android:id="@+id/ce_TextType"
+                            style="@style/ControlInputStyle"
+                            android:visibility="gone"
+
+                            app:customFont="@string/font_satoshi" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_textTypeImage"
+                        android:layout_width="@dimen/control_input_image_height"
+                        android:layout_height="@dimen/control_input_image_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.1"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_googlePlacesSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/control_input_height"
+                    android:background="@drawable/control_default_background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto"
+                        style="@style/ControlInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@color/transparent"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/places_autocomplete_search_hint" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

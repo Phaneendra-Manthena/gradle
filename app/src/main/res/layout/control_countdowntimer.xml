@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_timer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_displayName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_displayName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/displayName"
+                        android:textColor="@color/display_name_color"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                </LinearLayout>
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:hint="@string/hint"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_countdowntimer_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_hr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="00"
+
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name" />
+
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ctv_dots1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:padding="@dimen/_5sdp"
+                        android:text=":"
+                        android:textColor="@color/display_name_color"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="00"
+
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name" />
+
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ctv_dots2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:padding="@dimen/_5sdp"
+                        android:text=":"
+                        android:textColor="@color/display_name_color"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="00"
+
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- <LinearLayout
+                 android:id="@+id/ll_bts"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="visible"
+                 android:orientation="horizontal"
+                 android:gravity="center">
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Start"
+                     android:id="@+id/start_button"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Pause" android:visibility="gone"
+                     android:id="@+id/pause_button"
+                     android:enabled="false"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Reset"
+                     android:visibility="gone"
+                     android:id="@+id/reset_button"
+                     android:enabled="false"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="End"
+                     android:visibility="gone"
+                     android:id="@+id/end_button"
+                     android:enabled="false"/>
+             </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

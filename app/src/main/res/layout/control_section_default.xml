@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_displayName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:gravity="center_vertical"
+        android:background="@drawable/top_left_right_rounded_corners_default_gray_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_displayName"
+                style="@style/ControlInputStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="@string/displayName"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/display_name_color"
+                app:customFont="@string/font_satoshi" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:gravity="center">
+
+                <com.bhargo.user.custom.CustomButton
+                    android:id="@+id/btn_expand"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@drawable/ic_down_arrow_default"
+                    android:visibility="visible" />
+
+                <com.bhargo.user.custom.CustomButton
+                    android:id="@+id/btn_collapse"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@drawable/ic_up_arrow_default"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_hint"
+            style="@style/HintTextStyle"
+            android:text="@string/hint"
+            android:visibility="gone"
+        android:paddingStart="@dimen/control_input_padding_start"
+            app:customFont="@string/font_satoshi" />
+
+        <View
+            android:id="@+id/hintview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/uFScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_left_right_rounded_corners_bg"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_scrollChildLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sectionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_error_text" />
+
+</LinearLayout>

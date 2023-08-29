@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_AppsListMain"
+    tools:context=".screens.ViewDataActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_notifications"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_no_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_notification"/>
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_notification_yet"
+        android:textColor="?attr/bhargo_color_ten"
+        android:textSize="@dimen/_14sdp"
+        app:customFont="@string/font_satoshi" />
+
+    </LinearLayout>
+
+</RelativeLayout>

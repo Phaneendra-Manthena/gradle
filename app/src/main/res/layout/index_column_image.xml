@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_imageQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/columnName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:ellipsize="end"
+                            android:text="text_name"
+                            android:textSize="@dimen/_12sdp"
+                            app:customFont="@string/font_name" />
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/columnValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:text="text_value"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:customFont="@string/font_name" />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <user.CustomTextView-->
+    <!--                android:id="@+id/columnName"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="0.4"-->
+    <!--                android:text="text_name"-->
+    <!--                android:ellipsize="end"-->
+    <!--                android:textSize="@dimen/_12sdp"-->
+    <!--                app:customFont="@string/font_name"/>-->
+
+    <!--            <user.CustomTextView-->
+    <!--                android:id="@+id/columnValue"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="0.6"-->
+    <!--                android:text="text_value"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="@dimen/_12sdp"-->
+    <!--                app:customFont="@string/font_name" />-->
+
+
+    <!--        </LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_language"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_20sdp"
+        android:padding="@dimen/_8sdp"
+        android:fontFamily="@string/font_name_bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/Gray"/>
+
+    <RadioGroup
+            android:id="@+id/rg_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="vertical">
+            <RadioButton
+                android:padding="@dimen/_8sdp"
+                android:id="@+id/rb_eng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:gravity="center_vertical"
+                android:text="@string/english"
+                android:fontFamily="@string/font_name"/>
+            <RadioButton
+                android:visibility="gone"
+                android:padding="@dimen/_8sdp"
+                android:id="@+id/rb_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:gravity="center_vertical"
+                android:fontFamily="@string/font_name"
+                android:text="@string/telugu"/>
+            <RadioButton
+                android:padding="@dimen/_8sdp"
+                android:id="@+id/rb_hin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@string/font_name"
+                android:text="@string/hindi"/>
+            <RadioButton
+                android:visibility="gone"
+                android:padding="@dimen/_8sdp"
+                android:id="@+id/rb_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@string/font_name"
+                android:text="@string/tamil"/>
+        <RadioButton
+            android:visibility="gone"
+            android:padding="@dimen/_8sdp"
+            android:id="@+id/rb_marathi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@string/font_name"
+            android:text="@string/marathi"/>
+        <RadioButton
+            android:visibility="gone"
+            android:padding="@dimen/_8sdp"
+            android:id="@+id/rb_kannada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@string/font_name"
+            android:text="@string/kannada"/>
+        <RadioButton
+            android:visibility="gone"
+            android:padding="@dimen/_8sdp"
+            android:id="@+id/rb_sinhala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@string/font_name"
+            android:text="@string/sinhala"/>
+        </RadioGroup>
+
+    <com.bhargo.user.custom.CustomButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_gravity="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@null"/>
+
+</LinearLayout>
+
+
+

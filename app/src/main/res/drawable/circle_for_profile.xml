@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="?attr/bhargo_color_fourteen" />
+
+    <size
+        android:height="90dp"
+        android:width="90dp" />
+
+</shape>
+

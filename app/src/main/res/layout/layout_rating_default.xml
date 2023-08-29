@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_tap_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/control_default_background_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressBackgroundTint="?attr/bhargo_color_fifteen"
+                    android:progressTint="?attr/bhargo_color_one"
+                    android:secondaryProgressTint="?attr/bhargo_color_one" />
+
+                <com.hsalf.smileyrating.SmileyRating
+                    android:id="@+id/smile_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

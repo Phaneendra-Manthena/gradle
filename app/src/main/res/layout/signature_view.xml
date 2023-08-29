@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:text="@string/displayName"
+        android:textColor="@color/detailed_page_display_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:customFont="@string/font_satoshi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_1"
+        android:background="@drawable/rectangle_box_signature" />
+
+    <View
+        android:id="@+id/vDisplayDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@color/detailed_page_divider_color" />
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_VideosListMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_gray"
+    android:orientation="vertical"
+    tools:context=".fragments.VideosFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_videosSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/semi_rounded_bg_apps_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:background="@drawable/search_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--            <user.CustomEditText-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:id="@+id/cet_usersSearch"-->
+            <!--                android:layout_weight="0.8"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/dimen_20"-->
+            <!--                android:textSize="@dimen/user_name_size"-->
+            <!--                android:gravity="center_vertical|start"-->
+            <!--                android:layout_gravity="center_vertical|center_horizontal"-->
+            <!--                android:hint="@string/search"-->
+            <!--                android:background="@null"-->
+            <!--                android:textColorHint="@color/hint_color"-->
+            <!--                android:textColor="@color/control_input_text_color"/>-->
+            <com.bhargo.user.custom.CustomEditText
+                android:id="@+id/cet_videosSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_weight="0.8"
+                android:background="@null"
+                android:gravity="center_vertical|start"
+                android:hint="@string/search"
+                android:textColor="@color/control_input_text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/user_name_size" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_icon_search_grey" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.bhargo.user.custom.CustomEditText
+        android:id="@+id/cet_videosSearch_old"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/rounded_corners_border"
+        android:drawableRight="@drawable/quantum_ic_search_grey600_24"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="start|center_vertical"
+        android:hint="@string/search_elearning"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"
+        app:customFont="@string/font_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_videos_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_videosSearch"
+        android:layout_marginBottom="@dimen/dimen_60"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/no_data_grid_img" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:layout_below="@+id/iv_no_data"
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_records"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:customFont="@string/font_satoshi_bold" />
+
+</RelativeLayout>

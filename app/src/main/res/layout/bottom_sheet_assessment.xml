@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_left_right_rounded_corners_white_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginBottom="@dimen/dimen_30">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ad_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/title"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/text_size_20"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_icon_cancel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/attempt"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/text_size_20"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_attempt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/dimen_10"
+                    android:text="3"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/text_size_20"
+                    app:customFont="@string/font_satoshi_bold" />
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tvLeftCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:gravity="start"
+                android:text="@string/left"
+                android:textSize="@dimen/text_size_16"
+                app:customFont="@string/font_satoshi_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.8"
+                    android:gravity="start"
+                    android:text="Number of Questions"
+                    android:textSize="@dimen/text_size_16"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.2"
+                    android:gravity="end"
+                    android:hint="0"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/text_size_16"
+                    app:customFont="@string/font_satoshi_bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:text="Duration"
+                    android:textSize="@dimen/text_size_16"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.3"
+                    android:gravity="end"
+                    android:hint="00:00 mins"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/text_size_16"
+                    app:customFont="@string/font_satoshi_bold" />
+
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_startAssessment"
+                style="@style/ControlButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:text="@string/start"
+                android:textSize="@dimen/user_name_size"
+                app:customFont="@string/font_satoshi_bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

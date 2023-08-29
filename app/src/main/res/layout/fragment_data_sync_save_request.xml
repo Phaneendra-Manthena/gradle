@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DataSyncSaveRequestFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_AppsListMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_search"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableRight="@drawable/quantum_ic_search_grey600_24"
+            android:drawableTint="@color/colorAccent"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="gone">
+
+        </EditText>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_apps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/et_search"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_alNoRecords"
+            app:customFont="@string/font_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_records"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bhargo.user.custom.CustomRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/radioButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:layout_margin="@dimen/_15sdp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:text="item"
+    android:gravity="center_horizontal|center_vertical"
+    android:background="@drawable/radio_button_nine"
+    android:textColor="@drawable/radio_text"
+    android:textSize="@dimen/_12sdp"
+    app:customFont="@string/font_name" />
+
+

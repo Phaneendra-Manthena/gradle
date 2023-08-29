@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_AppsListMain"
+    android:background="@color/profile_divider"
+    tools:context=".screens.ViewDataActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:weightSum="1"
+        android:id="@+id/layout_search"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:background="@drawable/search_bg">
+
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:id="@+id/actv_search"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:textSize="@dimen/user_name_size"
+            android:gravity="center_vertical|start"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:hint="@string/search"
+            android:background="@null"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/control_input_text_color"/>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_icon_search_grey"/>
+
+    </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/dimen_10"
+    android:layout_below="@+id/layout_search"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_apps"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actv_search"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_records"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:customFont="@string/font_satoshi" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_add_row"
+        android:layout_gravity="end|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/white"
+        android:src="@drawable/ic_add_white_24dp"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_20"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        android:visibility="gone"
+        app:elevation="6dp"
+        app:fabSize="normal"/>
+
+    <com.bhargo.user.custom.CustomButton
+        android:id="@+id/cb_add_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new"
+        android:paddingStart="@dimen/dimen_10"
+        android:paddingEnd="@dimen/dimen_10"
+        style="@style/AddMoreButtonStyle"
+        android:layout_gravity="center_horizontal|center_vertical|bottom"
+        app:customFont="@string/font_satoshi_bold"
+        android:drawablePadding="@dimen/dimen_10"
+        android:drawableStart="@drawable/ic_icon_add_new"
+        android:background="@drawable/default_button_rounded_corners"/>
+
+</FrameLayout>
+</RelativeLayout>

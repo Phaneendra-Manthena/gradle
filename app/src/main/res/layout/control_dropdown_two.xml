@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:id="@+id/ll_main_inside"
+    android:padding="@dimen/individual_control_padding">
+
+    <nk.mobileapps.spinnerlib.SearchableSpinner
+        android:id="@+id/searchableSpinner_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:customFont="@string/font_name"
+        app:dialogTitleVisible="false"
+        android:background="@drawable/spinner_update_bg"
+        android:textColor="@color/display_name_color"
+        app:hintText="@string/select_default" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_displayName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/displayName"
+                    android:textColor="@color/display_name_color"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_mandatory"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top|center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_mandatory_star_red_24dp" />
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:hint="@string/hint"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <nk.mobileapps.spinnerlib.SearchableSpinner
+                    android:id="@+id/searchableSpinner_main2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    app:customFont="@string/font_name"
+                    app:dialogTitleVisible="false"
+                    android:background="@drawable/spinner_update_bg"
+                    android:textColor="@color/display_name_color"
+                    app:hintText="@string/tap_to_select_dd" />
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomEditText
+                android:id="@+id/ce_otherchoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/divider2"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                app:customFont="@string/font_name" />
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ct_alertTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_mandatory_star_red_24dp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/error_text"
+                android:textColor="@color/colorAccent"
+                app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_showText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/keyboard_green"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+
+</LinearLayout>

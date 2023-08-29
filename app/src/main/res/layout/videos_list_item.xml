@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7sdp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="@dimen/_5sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_circle_assess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corners">
+
+            <ImageView
+                android:id="@+id/iv_circle_assess"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="fitXY"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/cv_circle_assess"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAssess_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Topic Name"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAssessDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:text="Topic Description"
+                    android:textColor="?attr/bhargo_color_eleven"
+                    android:textSize="@dimen/_11sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvIsAssessStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Assessment"
+                        android:textColor="?attr/bhargo_color_eleven"
+                        android:textSize="@dimen/_11sdp"
+                        app:customFont="@string/font_name" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvAssessStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Assessment Yes/No"
+                        android:textColor="?attr/bhargo_color_eleven"
+                        android:textSize="@dimen/_11sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/chat_divider"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

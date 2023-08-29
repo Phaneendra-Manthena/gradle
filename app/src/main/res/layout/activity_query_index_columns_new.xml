@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/layout_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <com.bhargo.user.custom.CustomButton
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:id="@+id/cb_get_data"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_corners"
+                android:backgroundTint="?attr/bhargo_color_one"
+                android:text="@string/get_data"
+                android:textColor="@color/mat_white"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_satoshi" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_filters"
+        android:id="@+id/llIndexColumns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvIndexColumns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:id="@+id/mapLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:elevation="@dimen/_8sdp"
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:tint="@color/LightGrey"
+                    android:src="@drawable/icon_data"/>
+                <nk.mobileapps.spinnerlib.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="@string/font_satoshi"
+                    android:text="@string/data"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_map"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:tint="@color/LightGrey"
+                    android:src="@drawable/icon_map"/>
+                <nk.mobileapps.spinnerlib.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="@string/font_name"
+                    android:text="@string/map"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/layout_filters"
+        android:id="@+id/rvIndexColumns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+    <!--<FrameLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:elevation="@dimen/_8sdp"
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:tint="@color/LightGrey"
+                android:src="@drawable/icon_data"/>
+            <nk.mobileapps.spinnerlib.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customFont="@string/font_name"
+                android:text="@string/data"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:tint="@color/LightGrey"
+                android:src="@drawable/icon_map"/>
+            <nk.mobileapps.spinnerlib.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customFont="@string/font_name"
+                android:text="@string/map"/>
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_no_data"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="?attr/bhargo_color_ten"
+        app:customFont="@string/font_satoshi"
+        android:text="No data found.."/>
+
+</RelativeLayout>

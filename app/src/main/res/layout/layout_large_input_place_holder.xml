@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_display_name"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_tap_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_tapTextType"
+                        style="@style/ControlLargeInputStyle"
+                        android:focusable="false"
+                        android:text="@string/tap_here"
+                        android:visibility="gone"
+                        app:customFont="@string/font_satoshi" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_TextType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/control_large_input_height"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:hint="@string/displayName"
+                        app:hintAnimationEnabled="true">
+
+                        <com.bhargo.user.custom.CustomEditText
+                            android:id="@+id/ce_TextType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:visibility="visible"
+                            app:customFont="@string/font_satoshi" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_textTypeImage"
+                    android:layout_width="@dimen/control_input_image_height"
+                    android:layout_height="@dimen/control_input_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/ll_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/control_default_background"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <net.dankito.richtexteditor.android.RichTextEditor
+                    android:id="@+id/text_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/control_text_editor_height"
+                    android:layout_margin="@dimen/dimen_1" />
+
+                <net.dankito.richtexteditor.android.toolbar.AllCommandsEditorToolbar
+                    android:id="@+id/editorToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/control_editor_toolbar_height"
+                    android:background="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

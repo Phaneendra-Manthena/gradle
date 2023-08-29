@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_item_main"
+    android:background="@drawable/rounded_corners_dataviewer"
+    android:layout_margin="@dimen/dimen_5"
+    android:layout_height="@dimen/dimen_172">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_dv_gitr"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:layout_height="@dimen/dimen_80"
+       android:scaleType="centerCrop"
+        android:src="@drawable/sample1"/>
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="end"
+            android:text="value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/rounded_corner_bg_primary_color"
+            app:customFont="@string/font_name_semi_bold"/>
+
+    </FrameLayout>
+    <com.bhargo.user.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gitr_Heading"
+        style="@style/dataViewerTextStyle"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_4"
+        app:customFont="@string/font_satoshi_bold"
+        android:text="@string/heading"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"/>
+
+
+</LinearLayout>

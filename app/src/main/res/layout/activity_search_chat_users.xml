@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/bhargo_color_fourteen"
+    android:layout_height="match_parent"
+    tools:context=".screens.SearchChatUsers">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_search" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/semi_rounded_bg_apps_list"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginEnd="@dimen/dimen_20"
+                android:background="@drawable/search_bg">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cet_usersSearch"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20"
+                    android:textSize="@dimen/user_name_size"
+                    android:gravity="center_vertical|start"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:hint="@string/search"
+                    android:background="@null"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="@color/control_input_text_color"/>
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/ic_icon_search_grey"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fl_search">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_noRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/data_not_found"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                app:customFont="@string/font_name" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_groups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:visibility="visible">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_groups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:text="@string/groups"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_groups"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_groups"
+                            android:visibility="visible" />
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/ct_alNoData_groups"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/no_records"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:customFont="@string/font_name" />
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_view_all_groups"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rv_groups"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/rounded_corners_gray_bg_small_radius"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/view_all"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/bs_bg"
+        android:background="@color/bottom_sheet_bg"
+        android:layout_width="match_parent"
+        android:alpha="0.5"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/layout_create_session"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

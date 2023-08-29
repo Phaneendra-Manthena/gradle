@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_search_apps_card_height"
+    android:layout_margin="@dimen/dimen_5"
+    android:background="@drawable/card_bg_rounded_corners"
+    android:elevation="0.5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_circle"
+            android:layout_margin="@dimen/dimen_15"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:text="Name"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/display_text_size"
+                    app:customFont="@string/font_satoshi" />
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppMLType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:text="Training"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textColor="@color/buttonBlue"
+                    android:textSize="@dimen/_11sdp"
+                    app:customFont="@string/font_name"
+                    android:visibility="gone"/>
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:text="Description"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/hint_text_size"
+                    app:customFont="@string/font_satoshi" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

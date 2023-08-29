@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080585107220",
+    "project_id": "bhargouser",
+    "storage_bucket": "bhargouser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080585107220:android:f74574fe0eea37dc533401",
+        "android_client_info": {
+          "package_name": "com.bhargo.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080585107220-62hnfm51la17tcaah4shh7t69jofempp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK1HgAaYFzIDuw3Seveq4O_AWJ8VYsdFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080585107220-62hnfm51la17tcaah4shh7t69jofempp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

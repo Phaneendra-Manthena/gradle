@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_AppsListMain"
+    tools:context=".screens.AppsListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_hs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mat_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/urin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="You are in"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+            <com.bhargo.user.custom.SearchableSpinner
+                android:id="@+id/sp_ORG"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/urin"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/spinner_bg" />
+
+            <ImageView
+                android:id="@+id/iv_Profile"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/user"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_Share"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/iv_Profile"
+                android:background="@drawable/share"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_Search"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/iv_appListRefresh"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/iv_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/iv_appListRefresh"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_cloud_sync_red_24dp" />
+            <ImageView
+
+                android:id="@+id/iv_appListRefresh"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/refresh"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <!--    <View-->
+    <!--        android:id="@+id/ll_check"-->
+    <!--        android:layout_below="@+id/tb_hs"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_10sdp">-->
+    <!--    </View>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_apps"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_hs"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_records"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:customFont="@string/font_name" />
+
+
+</RelativeLayout>

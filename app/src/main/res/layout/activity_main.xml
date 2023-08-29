@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:id="@+id/iv_loading"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="match_parent"
+        android:src="@drawable/loading"/>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.bhargo.user.custom.CustomButton
+        android:id="@+id/btn_FileCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create File Object"
+        android:visibility="gone" />
+    <!--<LinearLayout
+        android:id="@+id/linearLayout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />-->
+
+    <ScrollView
+        android:id="@+id/uFScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:id="@+id/ll_SCmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/cb_verifyCaptcha"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/button_rounded_corners"
+                android:backgroundTint="@color/Red"
+                android:text="@string/verifyCaptcha"
+                android:textColor="@color/mat_white"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <com.bhargo.user.custom.CustomButton
+                    android:id="@+id/cb_clear_formControls"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_corners"
+                    android:backgroundTint="@color/Red"
+                    android:text="@string/clear"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomButton
+                    android:id="@+id/cb_submit_formControls"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/button_rounded_corners"
+                    android:backgroundTint="@color/Red"
+                    android:text="@string/submit"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone"
+                    app:customFont="@string/font_name" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/rv_menu_as_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+    private String text;
+    private String imagePath;
+    private String selectedDate;
+    private Item selectedItem;
+    private List<Item> selectedItems;
+    private String selectedRating;
+    private String voiceRecordPath;
+    private String videoRecordPath;
+    private String uploadedFilePath;
+    private String signaturePath;
+    private String selectedTime;
+    private String fileLink;
+    private String gpsValue;
+    private String gpsLat;
+    private String gpsLong;
+    private List<Item> selectedUser;
+    private List<Item> selectedPost;
+
+    //not implement: CalendarEventControl,AutoNumber,MapControl
+    //UI not implement: AutoNumber,MapControl
+
+
+
+

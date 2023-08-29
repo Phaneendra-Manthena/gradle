@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+    <attr format="string" name="hintText"/>
+
+    <declare-styleable name="SearchableSpinner">
+
+    <attr name="hintText"/>
+
+    <attr name="android:textColor">#000000</attr>
+
+</declare-styleable>
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="multi_line_radio_group">
+        <attr name="max_in_row" format="integer" />
+        <attr name="radio_buttons" format="reference" />
+        <attr name="default_button" format="string" />
+    </declare-styleable>
+
+        <declare-styleable name="RoundishImageViewLeftTopBottom">
+            <attr name="cornerRadiusLeftTopBottom" format="dimension" />
+            <attr name="roundedCornersLeftTopBottom">
+                <flag name="topLeft" value="8" />
+                <flag name="topRight" value="8" />
+                <flag name="bottomRight" value="0" />
+                <flag name="bottomLeft" value="0" />
+                <flag name="all" value="15" />
+            </attr>
+        </declare-styleable>
+
+    <declare-styleable name="RoundishImageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="roundedCorners">
+            <flag name="topLeft" value="8" />
+            <flag name="topRight" value="8" />
+            <flag name="bottomRight" value="0" />
+            <flag name="bottomLeft" value="0" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundishImageViewTopLeftRight">
+        <attr name="cornerRadiusTopLeftRight" format="dimension" />
+        <attr name="roundedCornersTopLeftRight">
+            <flag name="topLeft" value="8" />
+            <flag name="topRight" value="8" />
+            <flag name="bottomRight" value="0" />
+            <flag name="bottomLeft" value="0" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundishImageViewAllCorners">
+        <attr name="cornerRadiusAll" format="dimension" />
+        <attr name="roundedCornersAll">
+            <flag name="topLeft" value="8" />
+            <flag name="topRight" value="8" />
+            <flag name="bottomRight" value="8" />
+            <flag name="bottomLeft" value="8" />
+            <flag name="all" value="15" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Theme">
+    <attr name="bhargo_color_one" format="reference" />// For Dashboard semi rounded layout BG and Toolbar and Post change
+    <attr name="bhargo_color_two" format="reference" />// For Dashboard Bottom Navigation Text Color
+    <attr name="bhargo_color_three" format="reference" />// For Dashboard Card Designation Text Color
+    <attr name="bhargo_color_four" format="reference" />// For Control Border and Text Color
+    <attr name="bhargo_color_five" format="reference" />// For Dotted Border for camera
+    <attr name="bhargo_color_six" format="reference" />// For Dotted Border for camera
+    <attr name="bhargo_color_seven" format="reference" />// For ev greencolor in progressbar
+    <attr name="bhargo_color_eight" format="reference" />// For TextColor
+    <attr name="bhargo_color_nine" format="reference" />// For Search in Sync Activity
+    <attr name="bhargo_color_ten" format="reference" />// Text inside edittextColor
+    <attr name="bhargo_color_eleven" format="reference" />// Description TextColor
+    <attr name="bhargo_color_twelve" format="reference" />// Toolbar title TextColor
+    <attr name="bhargo_color_thirteen" format="reference" />// AppsList Item Hint text color
+    <attr name="bhargo_color_fourteen" format="reference" />// AppsList BG LightBlue color
+    <attr name="bhargo_color_fifteen" format="reference" />// Rating LightBlue color
+    <attr name="bhargo_color_sixteen" format="reference" />// Assessment List BG LightBlue color
+    </declare-styleable>
+
+    <declare-styleable name="SignaturePad">
+        <attr name="penMinWidth" format="dimension" />
+        <attr name="penMaxWidth" format="dimension" />
+        <attr name="penColor" format="color" />
+        <attr name="velocityFilterWeight" format="float" />
+        <attr name="clearOnDoubleClick" format="boolean"/>
+    </declare-styleable>
+</resources>

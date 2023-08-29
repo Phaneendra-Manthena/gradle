@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.DeploymentSecondActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_deploy"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/rectangle_box_divider"
+                    android:backgroundTint="@color/divider"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/group_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="@string/font_name" />
+
+                <nk.mobileapps.spinnerlib.SearchableMultiSpinner
+                    android:id="@+id/sp_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/spinner_update_bg"
+                    app:hintText="Select Groups" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_box_divider_light"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_groups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ct_noGroupSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/no_group_select"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:customFont="@string/font_name" />
+
+                </RelativeLayout>
+
+                <!--                <user.CustomEditText-->
+                <!--                    android:id="@+id/ceSelectedGroups"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_100sdp"-->
+                <!--                    android:layout_margin="@dimen/_5sdp"-->
+                <!--                    android:background="@drawable/rectangle_box_divider"-->
+                <!--                    android:gravity="left"-->
+                <!--                    android:padding="@dimen/_5sdp"-->
+                <!--                    android:textSize="@dimen/_10sdp"-->
+                <!--                    android:visibility="visible"-->
+                <!--                    app:customFont="@string/font_name" />-->
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_box_divider"
+                    android:backgroundTint="@color/divider"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/individual_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="@string/font_name" />
+
+                <nk.mobileapps.spinnerlib.SearchableMultiSpinner
+                    android:id="@+id/sp_individual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/spinner_update_bg"
+                    app:hintText="Select Individuals" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_box_divider_light"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_individuals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:visibility="gone" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ct_noIndividualSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/no_individual_select"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:customFont="@string/font_name" />
+
+                </RelativeLayout>
+
+                <!--                <user.CustomEditText-->
+                <!--                    android:id="@+id/ceSelectedIndividuals"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_100sdp"-->
+                <!--                    android:layout_margin="@dimen/_5sdp"-->
+                <!--                    android:background="@drawable/rectangle_box_divider"-->
+                <!--                    android:gravity="left"-->
+                <!--                    android:padding="@dimen/_5sdp"-->
+                <!--                    android:textSize="@dimen/_10sdp"-->
+                <!--                    android:visibility="visible"-->
+                <!--                    app:customFont="@string/font_name" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_deploy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!--                <user.CustomButton-->
+        <!--                    android:id="@+id/cb_submit"-->
+        <!--                    android:layout_width="@dimen/_150sdp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:background="@drawable/button_rounded_corners"-->
+        <!--                    android:backgroundTint="@color/Red"-->
+        <!--                    android:clickable="true"-->
+        <!--                    android:onClick="onClick_SubmitDS"-->
+        <!--                    android:text="@string/deploy"-->
+        <!--                    android:textColor="@color/mat_white"-->
+        <!--                    android:textSize="@dimen/_12sdp"-->
+        <!--                    app:customFont="@string/font_name" />-->
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/cb_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red"
+            android:clickable="true"
+            android:onClick="onClick_SubmitDS"
+            android:text="@string/deploy"
+            android:textColor="@color/mat_white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:customFont="@string/font_name" />
+
+    </LinearLayout>
+
+</RelativeLayout>

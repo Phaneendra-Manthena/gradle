@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_AppsListMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bhargo_color_fourteen"
+    android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/semi_rounded_bg_apps_list" />
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_20"
+           android:layout_marginBottom="@dimen/dimen_1"
+            android:outlineAmbientShadowColor="#a4a4aa"
+            android:outlineSpotShadowColor="#716E6E"
+            android:translationZ="1dp"
+            android:background="@drawable/rounded_corners_white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_35">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:src="@drawable/ic_icon_user" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+
+                    android:text="@string/displayName"
+                    android:textColor="@color/control_input_background_color"
+                    android:textSize="@dimen/user_name_size"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/displayName"
+                    android:textColor="@color/apps_list_phno_text_color"
+                    android:textSize="@dimen/hint_text_size"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:gravity="center_vertical|center_horizontal">
+                    <com.bhargo.user.custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/as"
+                        android:padding="@dimen/dimen_3"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:textColor="@color/apps_list_phno_text_color"
+                        android:textSize="@dimen/hint_text_size"
+                        app:customFont="@string/font_satoshi_bold" />
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_designation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/rounded_corners_apps_list_card"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="@dimen/dimen_3"
+                        android:text="@string/name"
+                        android:textColor="?attr/bhargo_color_one"
+                        android:textSize="@dimen/hint_text_size"
+                        app:customFont="@string/font_satoshi" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_helpdesk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <include layout="@layout/help_desk_layout" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_55"
+        android:visibility="visible" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ct_alNoRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/no_records"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone"
+        app:customFont="@string/font_satoshi_bold" />
+</LinearLayout>

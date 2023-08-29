@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    android:background="@color/mat_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_circle_user"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_taskitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/iv_circle"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvTasks_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Commenter Name"
+                    android:textColor="@color/waterfall"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvTasksStatusTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Status : "
+                        android:textColor="@color/waterfall"
+                        android:textSize="@dimen/_11sdp"
+                        app:customFont="@string/font_name" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvTasksStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Tasks Status"
+                        android:textColor="@color/waterfall"
+                        android:textSize="@dimen/_11sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                </LinearLayout>
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvTasksDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:hint="Comment Description"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_11sdp"
+                    app:customFont="@string/font_name" />
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvTasksDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="Comment Description"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/ll_taskitem"
+            android:layout_marginLeft="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/chat_divider" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

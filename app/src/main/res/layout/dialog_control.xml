@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@drawable/rectangle_border"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:id="@+id/tv_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <com.bhargo.user.custom.CustomButton
+            android:layout_gravity="center"
+            android:id="@+id/close_dialog"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+
+</LinearLayout>

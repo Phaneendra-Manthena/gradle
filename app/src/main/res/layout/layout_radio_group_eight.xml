@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/layout_display_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                android:id="@+id/ll_tap_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rg_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otherchoice"
+                    style="@style/ControlInputStyle"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:background="@drawable/control_default_background"
+                    android:visibility="gone"
+                    app:customFont="@string/font_satoshi" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

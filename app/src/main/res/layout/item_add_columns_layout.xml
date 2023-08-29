@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_columnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_preViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:visibility="visible"/>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_deleteColumn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:src="@drawable/ic_delete_black_24dp"-->
+<!--                    android:visibility="visible" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_settings"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_settings_black_24dp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_CtrlNameVisibility"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:visibility="gone">-->
+
+<!--                <user.CustomTextView-->
+<!--                    android:id="@+id/tv_controlName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:ellipsize="end"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="sample Text"-->
+<!--                    android:visibility="visible" />-->
+
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/iv_deleteMappedControl"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:src="@android:drawable/ic_delete"-->
+<!--                    android:visibility="visible" />-->
+<!--            </LinearLayout>-->
+
+<!--            <user.CustomButton-->
+<!--                android:id="@+id/cb_mapControl"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_5sdp"-->
+<!--                android:background="@drawable/button_rounded_corners"-->
+<!--                android:backgroundTint="@color/Red"-->
+<!--                android:drawableLeft="@drawable/ic_add_white_24dp"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="@dimen/_5sdp"-->
+<!--                android:text="MapCtrl"-->
+<!--                android:textColor="@color/mat_white"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                app:customFont="@string/font_name" />-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

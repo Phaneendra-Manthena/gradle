@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mat_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="@dimen/_10sdp"
+            android:src="@color/colorNavText"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:id="@+id/rlmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/iv_circle"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_Header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="A"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:customFont="@string/font_name" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="visible"
+                android:text="@string/designation"
+                android:textColor="@color/waterfall"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_Transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="visible"
+                android:textColor="@color/waterfall"
+                android:textSize="@dimen/_9sdp"
+                app:customFont="@string/font_name" />
+        </LinearLayout>
+
+    <View
+        android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/chat_divider" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

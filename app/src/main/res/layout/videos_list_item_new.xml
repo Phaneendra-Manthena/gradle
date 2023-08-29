@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_250"
+    android:background="@drawable/card_bg_rounded_corners"
+    android:elevation="@dimen/dimen_5"
+    android:layout_margin="@dimen/dimen_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.bhargo.user.utils.RoundedImageView
+                android:id="@+id/iv_circle_assess"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120"
+                android:background="@color/otp_bg"
+                app:riv_corner_radius_top_left="@dimen/dimen_6"
+                app:riv_corner_radius_top_right="@dimen/dimen_6"
+                android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAssess_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Topic Name"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/text_size_16"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAssessDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Topic Description"
+                    android:textColor="?attr/bhargo_color_eleven"
+                    android:textSize="@dimen/control_input_text_size"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvIsAssessStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Assessment"
+                        android:textColor="?attr/bhargo_color_eleven"
+                        android:textSize="@dimen/hint_text_size"
+                        app:customFont="@string/font_name"
+                        />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvAssessStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Assessment Yes/No"
+                        android:textColor="?attr/bhargo_color_eleven"
+                        android:textSize="@dimen/hint_text_size"
+                        app:customFont="@string/font_name_semi_bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

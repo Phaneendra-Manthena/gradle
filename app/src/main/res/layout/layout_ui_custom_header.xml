@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_custom_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/custom_header"
+            android:textColor="@color/control_input_text_color"
+            app:customFont="@string/font_satoshi" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_5"
+    android:elevation="@dimen/dimen_5"
+    android:background="@drawable/rounded_corners_default_white_bg"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="@dimen/dimen_15"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30">
+            <LinearLayout
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:padding="@dimen/dimen_5"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/rounded_rectangle_edit_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:id="@+id/iv_profile_image"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/wallet_icon"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gitr_Heading"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/control_input_text_color"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/heading"/>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_gitr_SubHeading"
+                android:layout_height="wrap_content"
+                style="@style/dataViewerTextStyle"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/dimen_10"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/heading"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+android:layout_marginStart="@dimen/dimen_25"
+            android:layout_marginEnd="@dimen/dimen_25"
+            android:background="@color/detailed_page_divider_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_Description"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_25"
+                android:layout_marginEnd="@dimen/dimen_25"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

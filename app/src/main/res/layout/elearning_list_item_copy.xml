@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_20"
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_marginRight="@dimen/dimen_20"
+    android:background="@drawable/rounded_corners"
+    android:elevation="@dimen/_3sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_elImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_elImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_80">
+
+                    <com.bhargo.user.utils.RoundedImageView
+                        android:id="@+id/iv_elImage"
+                        android:layout_width="@dimen/dimen_80"
+                        android:layout_height="@dimen/dimen_80"
+                        android:background="@color/otp_bg"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_play_arrow_black_24dp"
+                        android:backgroundTint="@color/mat_white" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_elName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@+id/cv_elImage"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="Title"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/control_input_text_color"
+            android:textSize="@dimen/text_size_16"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ctv_elName"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@+id/cv_elImage"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="mins"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="?attr/bhargo_color_eleven"
+            android:textSize="@dimen/text_size_12"
+            app:customFont="@string/font_satoshi" />
+
+        <RelativeLayout
+            android:id="@+id/ll_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ctv_mins"
+            android:layout_toRightOf="@+id/cv_elImage"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:visibility="visible">
+
+
+            <ProgressBar
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorBlue"
+                android:indeterminateTintMode="src_atop"
+                android:maxHeight="6dp"
+                android:minHeight="6dp"
+                android:secondaryProgress="100" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

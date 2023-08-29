@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_subForm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainactivity_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/individual_control_padding">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mian_subform_rectangle_border"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_isEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subform_rectangle_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_displayName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/displayName"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_mandatory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top|center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_mandatory_star_red_24dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:hint=""
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/mat_white"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/quantum_ic_search_grey600_24"
+            app:tint="@color/colorPrimaryDark" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rectangle"
+
+            android:drawableTint="@color/colorPrimaryDark"
+            android:hint="Search..."
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:visibility="visible"
+
+            />
+    </LinearLayout>
+
+
+
+
+        <ScrollView
+            android:id="@+id/uFScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_subFormContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_MainSubFormContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Gray"
+                        android:orientation="vertical" />
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/idNestedSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvGrid"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:nestedScrollingEnabled="false" />
+                            <ProgressBar
+                                android:id="@+id/idPBLoading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <com.bhargo.user.custom.CustomButton
+                        android:id="@+id/btn_addSubForm"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/button_rounded_corners"
+                        android:backgroundTint="@color/divider2"
+                        android:drawableLeft="@drawable/ic_add_white_24dp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/add_more"
+                        android:textColor="@color/mat_white"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                    <com.bhargo.user.custom.CustomButton
+                        android:id="@+id/dlt_SubForm"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="right"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/button_rounded_corners"
+                        android:backgroundTint="@color/divider2"
+                        android:drawableLeft="@drawable/ic_delete_white"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Delete"
+                        android:textColor="@color/mat_white"
+                        android:textSize="@dimen/_12sdp"
+                        app:customFont="@string/font_name_semi_bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</LinearLayout>

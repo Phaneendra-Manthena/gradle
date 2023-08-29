@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/columnName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textSize="@dimen/_8sdp"
+            app:customFont="@string/font_name"/>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/columnValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            app:customFont="@string/font_name" />
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:gravity="start"
+           android:layout_weight="0.2">
+           <ImageView
+               android:visibility="gone"
+               android:id="@+id/iv_call"
+               android:layout_width="@dimen/_15sdp"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_gravity="start"
+               android:src="@drawable/ic_baseline_phone_24"/>
+       </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout
+        android:visibility="gone"
+        android:id="@+id/til_row_details"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorTextColor="@color/colorPrimary"
+        android:outlineProvider="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_row_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>-->
+</LinearLayout>

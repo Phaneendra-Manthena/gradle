@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.OutTaskCommentsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/svComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_comment_box"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_box_divider_dark_if"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/defaultItem"
+                layout="@layout/comments_list_item"
+                android:visibility="gone" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_noRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="No records!"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:customFont="@string/font_name_semi_bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_comment_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/cet_Comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_toLeftOf="@+id/btn_send_comment"
+            android:background="@drawable/rounded_corners_border"
+            android:gravity="center_vertical"
+            android:hint="Write comments"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <ImageButton
+            android:id="@+id/btn_send_comment"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/main_rounded_corners"
+            android:backgroundTint="@color/red"
+            android:contentDescription="@string/send_button"
+            android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

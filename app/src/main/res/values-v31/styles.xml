@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimary</item>
+        <item name="bhargo_color_two">@color/colorPrimary</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLight</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="bhargo_color_four">@color/bhargo_color_four</item>
+        <item name="bhargo_color_five">@color/bhargo_color_five</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_seven
+        </item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine
+        </item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten
+        </item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven
+        </item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve
+        </item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen
+        </item><!--Assessment List BG LightBlue color-->
+
+    </style>
+</resources>

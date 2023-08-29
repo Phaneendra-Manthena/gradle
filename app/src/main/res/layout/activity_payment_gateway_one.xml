@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_15"
+    android:layout_margin="@dimen/dimen_5"
+    android:id="@+id/ll_main_inside"
+    android:background="@color/main_layout_bg"
+    tools:context=".wizard.PaymentGatewayOne">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            style="@style/dataViewerTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/select_payment_method"
+            android:textSize="@dimen/header_size"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_oneDebitCardMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_15"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rbDebitCreditCards"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_45"
+                    android:layout_weight="0.9"
+                    android:checked="true"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/debit_credit_card"
+                    android:textColor="@color/control_radio_button_item"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:theme="@style/RadioButtonDefault"
+                    app:customFont="@string/font_satoshi" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_credit_card" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_debit_credit_cards" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_oneNetBankingMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_15"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rbNetBanking"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_45"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/net_banking"
+                    android:textColor="@color/control_radio_button_item"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:theme="@style/RadioButtonDefault"
+                    app:customFont="@string/font_satoshi" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_net_banking" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_netBankingSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_15"
+                android:background="@drawable/rounded_corners_default_white_bg_black"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/dimen_20"
+                android:visibility="gone">
+
+                <nk.mobileapps.spinnerlib.SearchableSpinner
+                    android:id="@+id/searchableSpinner_main"
+                    style="@style/ControlDropDownStyle"
+                    android:layout_height="@dimen/dimen_40"
+                    app:customFont="@string/font_name"
+                    app:dialogTitleVisible="false"
+                    app:hintText="@string/select_bank" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_15"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomRadioButton
+                    android:id="@+id/rbUPI"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_45"
+                    android:layout_weight="0.8"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/upi"
+                    android:textColor="@color/control_radio_button_item"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:theme="@style/RadioButtonDefault"
+                    app:customFont="@string/font_satoshi" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_upi" />
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomEditText
+                android:id="@+id/ce_upi_id"
+                style="@style/ControlInputStyle"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginEnd="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:background="@drawable/rounded_corners_default_white_bg_black"
+                android:hint="Enter your UPI ID"
+                android:inputType="textPersonName"
+                android:visibility="gone"
+                app:customFont="@string/font_satoshi" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mat_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_pay_now"
+                style="@style/ControlButtonStyle"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:text="Pay Now"
+                android:textSize="@dimen/text_size_16"
+                app:customFont="@string/font_satoshi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

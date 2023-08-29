@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+
+            android:id="@+id/rl_dv_gitr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_dv_gitr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <FrameLayout
+                    android:id="@+id/fl_dv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_transaparent_box"
+                        android:orientation="vertical" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:id="@+id/iv_dv_gitr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/mat_white"
+                            android:background="@drawable/ic_play_circle_outline_black_50dp" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_corner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="value"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:background="@drawable/dv_rectangle"
+                app:customFont="@string/font_name_semi_bold"/>
+            <View
+                android:id="@+id/v_dv_gitr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/ll_dv_gitr"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/chat_divider" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_gitr_Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_dv_gitr"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Heading"
+                android:textColor="@color/colorPrimaryDark"
+                app:customFont="@string/font_name_bold"
+                android:textSize="@dimen/_14sdp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_gitr_Heading"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp">
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

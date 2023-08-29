@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:height="2dp"/>
+
+
+    <solid android:color="?attr/bhargo_color_sixteen" />
+
+    <corners
+        android:radius="@dimen/_15sdp"/>
+</shape>

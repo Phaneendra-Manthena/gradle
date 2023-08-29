@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<solid android:color="" />-->
+    <solid android:color= "@color/control_disable_color" />
+<!--    <solid android:color="#D2D2D2" />-->
+<!--    <solid android:color="#c2c2c2" />-->
+<!--    <solid android:color="@color/divider" />-->
+
+
+
+    <!--<corners-->
+        <!--android:bottomLeftRadius="@dimen/_20sdp"-->
+        <!--android:bottomRightRadius="@dimen/_20sdp"-->
+        <!--android:topLeftRadius="@dimen/_20sdp"-->
+        <!--android:topRightRadius="@dimen/_20sdp"" />-->
+
+    <!--<item>-->
+
+        <!--<bitmap android:gravity="center|right"-->
+            <!--android:src="@drawable/downarrow_20" />-->
+
+    <!--</item>-->
+
+</shape>

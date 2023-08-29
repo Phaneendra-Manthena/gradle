@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_divider">
+
+    <LinearLayout
+        android:layout_above="@+id/ll_Ok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <com.bhargo.user.custom.CustomEditText
+        android:id="@+id/etv_cadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_corners"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name_semi_bold" />
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/tv_cadTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_45sdp"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            app:customFont="@string/font_name_semi_bold"-->
+<!--            tools:ignore="MissingPrefix">-->
+
+<!--            <requestFocus />-->
+<!--        </androidx.appcompat.widget.SearchView>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/waterfall" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_Ok"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ctv_cancel"
+        android:textStyle="bold"
+        android:text="@string/cancel"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="@color/Black"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="@string/font_name_semi_bold"/>
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ctv_Ok"
+        android:textStyle="bold"
+        android:text="Ok"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="@color/Black"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="@string/font_name_semi_bold"/>
+    </LinearLayout>
+</RelativeLayout>

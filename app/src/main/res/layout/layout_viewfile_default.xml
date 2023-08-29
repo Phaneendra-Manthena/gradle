@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_tap_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bhargo.user.utils.RoundedWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200" />
+
+            <LinearLayout
+                android:id="@+id/layout_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_webview"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_3"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <FrameLayout
+                    android:id="@+id/flWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_200">
+
+                    <com.bhargo.user.utils.RoundedWebView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="?attr/bhargo_color_three"
+                        android:gravity="bottom"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_filelink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/iv_viewfile"
+                            android:text="@string/file_name"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/iv_viewfile"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_icon_view_file"
+                            app:tint="@color/white" />
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

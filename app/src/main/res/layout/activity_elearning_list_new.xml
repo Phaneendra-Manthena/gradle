@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/bhargo_color_fourteen"
+        tools:context=".screens.ELearningListActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/elv_eLearningList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_startAssessment"
+                    android:layout_below="@+id/toolbar"/>
+        <!--        <ExpandableListView-->
+<!--            android:id="@+id/elv_eLearningList"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_above="@+id/ll_startAssessment"-->
+<!--            android:layout_below="@+id/toolbar"-->
+<!--            android:divider="@null"-->
+<!--            android:groupIndicator="@null"-->
+<!--            android:paddingLeft="@dimen/_10sdp"-->
+<!--            android:paddingRight="@dimen/_10sdp"-->
+<!--            android:scrollbars="none" />-->
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_alNoRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_records"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:customFont="@string/font_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_startAssessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mat_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Assessment will start on april 7 to Ends on  may 3"
+                android:textColor="@color/control_input_text_color"
+                android:textSize="@dimen/control_input_text_size"
+
+                app:customFont="@string/font_satoshi" />
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_startAssessment"
+                style="@style/ControlButtonStyle"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:text="Start Assessment"
+                app:customFont="@string/font_satoshi_bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_assessment" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

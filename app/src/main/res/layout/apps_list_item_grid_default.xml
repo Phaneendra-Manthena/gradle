@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_apps_card_height"
+    android:layout_margin="@dimen/dimen_10"
+    android:outlineAmbientShadowColor="#a4a4aa"
+    android:outlineSpotShadowColor="#a4a4aa"
+    android:translationZ="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg_rounded_corners"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_circle"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:text="Name"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/display_text_size"
+                    app:customFont="@string/font_satoshi" />
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppMLType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:text="Training"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textColor="@color/buttonBlue"
+                    android:textSize="@dimen/_11sdp"
+                    app:customFont="@string/font_satoshi"
+                    android:visibility="gone"/>
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:text="Description"
+                    android:textColor="?attr/bhargo_color_thirteen"
+                    android:textSize="@dimen/hint_text_size"
+                    app:customFont="@string/font_satoshi_Regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_options"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/options_vertical"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_item_main"
+    android:background="@drawable/rounded_corners_dataviewer"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    android:layout_height="@dimen/dimen_130">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ctv_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:background="@drawable/rounded_corner_bg_primary_color"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="value"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:customFont="@string/font_satoshi_bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="top|start|center_horizontal"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dimen_50"
+                android:id="@+id/iv_dv_gitr"
+                android:layout_height="@dimen/dimen_50"
+                android:src="@drawable/ic_icon_user"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gitr_Heading"
+                style="@style/dataViewerTextStyle"
+                android:textSize="@dimen/header_size"
+                android:layout_marginBottom="@dimen/dimen_4"
+                app:customFont="@string/font_satoshi_bold"
+                android:text="@string/heading"/>
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gitr_SubHeading"
+                style="@style/dataViewerTextStyle"
+                android:textSize="@dimen/sub_header_size"
+                android:layout_marginBottom="@dimen/dimen_4"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/sub_heading"/>
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_gitrc"-->
+<!--                    android:layout_width="@dimen/_20sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:background="@drawable/button_shape_round"-->
+<!--                    android:backgroundTint="?attr/bhargo_color_one"-->
+<!--                    android:padding="@dimen/dimen_4"-->
+<!--                    android:src="@drawable/ic_baseline_call_24" />-->
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_Description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical|start"-->
+<!--                android:orientation="vertical" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="0dp"
+        android:paddingLeft="@dimen/dimen_10"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_Description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:background="@color/ev_green"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_gitrc"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/button_shape_round"
+            android:backgroundTint="?attr/bhargo_color_one"
+            android:padding="@dimen/dimen_4"
+            android:src="@drawable/ic_baseline_call_24" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

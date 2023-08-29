@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_140"
+    android:id="@+id/ll_item_main"
+    android:layout_margin="@dimen/dimen_10"
+    android:background="@drawable/rounded_corners_dataviewer"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:orientation="vertical">
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            android:background="@drawable/rounded_corners"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:padding="@dimen/dimen_4"
+            android:text="value"
+            android:textColor="?attr/bhargo_color_ten"
+            android:textSize="@dimen/dimen_10"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_weight="0.2"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_dv_gitr"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:src="@drawable/ic_icon_user" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_gitr_Heading"
+                    style="@style/dataViewerTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/heading"
+                    android:textSize="@dimen/header_size"
+                    android:textColor="?attr/bhargo_color_ten"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_gitr_SubHeading"
+                    style="@style/dataViewerTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_heading"
+                    android:textSize="@dimen/sub_header_size"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="?attr/bhargo_color_ten"
+                    app:customFont="@string/font_satoshi" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:gravity="center_vertical|start"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

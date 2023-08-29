@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:background="@color/mat_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/llIndexColumns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/rectangle_border"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:scaleType="fitXY" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_values"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/layout_image"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_2sdp">
+
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tvfirstControlValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="@string/no_data_default"
+                android:textColor="@color/fbutton_color_midnight_blue"
+                android:textSize="@dimen/_12sdp"
+                app:customFont="@string/font_name_semi_bold" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tvSecondControlValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="@string/no_data_default"
+                android:textColor="@color/fbutton_color_midnight_blue"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tvThirdControlValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="@string/no_data_default"
+                        android:textColor="@color/waterfall"
+                        android:textSize="@dimen/_10sdp"
+                        app:customFont="@string/font_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="1.0">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_edit"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal|center_vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_edit"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_form_edit"
+                                app:tint="@color/fbutton_color_peter_river"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_delete"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal|center_vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_delete"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_delete_black_24dp"
+                                app:tint="@color/red"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

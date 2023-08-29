@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    tools:context=".utils.ImageSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Add Photo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_Camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick_Camera"
+            android:text="Take Photo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_Gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick_Gallery"
+            android:text="Gallery"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_GridImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick_GridImages"
+            android:text="Default Images"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick_Cancle"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:customFont="@string/font_name" />
+    </LinearLayout>
+</RelativeLayout>

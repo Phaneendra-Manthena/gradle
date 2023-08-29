@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.BottomNavigationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_hs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mat_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_fragmentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ct_FragmentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_OrgSpinnerData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/urin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="You are in"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.SearchableSpinner
+                    android:id="@+id/sp_ORG"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/urin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/spinner_bg" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/ll_menuItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/iv_appListRefresh"
+                    android:background="@color/transparent"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_cloud_sync_red_24dp" />
+
+
+            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/ll_action_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/iv_tasksFilter"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/ic_filter_list_black_24dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_appListRefresh"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/refresh"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_language"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/ic_language_24"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/iv_sync"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_cloud_sync_red_24dp"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_baseline_person_32"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/iv_notifications"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menuItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_sync"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                        android:background="@color/transparent"-->
+<!--                        android:visibility="visible"-->
+<!--                        app:srcCompat="@drawable/ic_cloud_sync_red_24dp" />-->
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<ImageView
+                android:id="@+id/iv_language"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ic_language_24"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_tasksFilter"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toLeftOf="@+id/iv_appListRefresh"
+                android:background="@drawable/ic_filter_list_black_24dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_appListRefresh"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/refresh"
+                android:visibility="gone" />-->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Main content -->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/tb_hs"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="-6dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/divider2"
+        app:itemTextColor="@color/divider"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

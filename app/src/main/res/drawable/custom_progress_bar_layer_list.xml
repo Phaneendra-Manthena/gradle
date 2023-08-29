@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/default_gray"/>
+
+<!--            <stroke-->
+<!--                android:color="@color/transparent"-->
+<!--                android:width="@dimen/seek_bar_thickness"/>-->
+            <corners
+                android:radius="@dimen/_5sdp"/>
+        </shape>
+    </item>
+<!--    <item android:id="@android:id/secondaryProgress">-->
+<!--        <clip>-->
+<!--            <shape-->
+<!--                android:shape="rectangle">-->
+<!--&lt;!&ndash;                <stroke&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:color="@color/default_gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:width="@dimen/seek_bar_thickness"/>&ndash;&gt;-->
+
+<!--                <corners-->
+<!--                    android:radius="@dimen/_10sdp"/>-->
+<!--            </shape>-->
+<!--        </clip>-->
+<!--    </item>-->
+
+<!--    <item android:id="@android:id/progress">-->
+<!--        <clip>-->
+<!--            <shape-->
+<!--                android:shape="rectangle">-->
+<!--&lt;!&ndash;                <stroke&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:color="@color/default_gray"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:width="@dimen/seek_bar_thickness"/>&ndash;&gt;-->
+
+<!--                <corners-->
+<!--                    android:radius="@dimen/_10sdp"/>-->
+<!--            </shape>-->
+<!--        </clip>-->
+<!--    </item>-->
+</layer-list>

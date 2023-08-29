@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_appsList"
+        android:icon="@drawable/icon_apps_list_grey"
+        android:title="@string/apps_list" />
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/selector_info"
+        android:title="@string/info" />
+
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/icon_reports_d"
+        android:title="@string/reports" />
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/icon_tasks"
+        android:title="@string/tasks" />
+    <item
+        android:id="@+id/navigation_videos"
+        android:icon="@drawable/icon_videos"
+        android:title="@string/e_learning" />
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_sync"-->
+    <!--        android:icon="@drawable/ic_cloud_sync_red_24dp"-->
+    <!--        android:title="Sync" />-->
+
+
+</menu>

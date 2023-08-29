@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M12.95,10.726a0.848,0.848 0,0 1,-0.98 -0.159L8.747,7.341a0.481,0.481 0,0 0,-0.68 0l-3.223,3.226a0.848,0.848 0,0 1,-1.2 -1.198l4.158,-4.164a0.855,0.855 0,0 1,1.21 0L13.17,9.37a0.848,0.848 0,0 1,-0.22 1.357z"
+      android:fillColor="?attr/bhargo_color_eleven"/>
+</vector>

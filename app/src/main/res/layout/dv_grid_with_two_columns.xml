@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_gwtc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/ev_item_bg_color"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bhargo.user.utils.RoundishImageViewLefttopBottom
+                android:id="@+id/iv_ev_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@color/LightGrey"
+                app:cornerRadius="8dp"
+                app:roundedCorners="topLeft|topRight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctvItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Accessory Name"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_gitr_Heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Heading"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_gitr_SubHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Sub Heading"
+                    android:textColor="?attr/bhargo_color_ten"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivAddressIcon"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/icon_location"
+                        android:backgroundTint="@color/Gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_callNow"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/only_left_rounded"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_gitrc"
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:background="@drawable/ic_baseline_call_24"
+                                android:backgroundTint="?attr/bhargo_color_one" />
+
+                            <com.bhargo.user.custom.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:text="Call Now"
+                                android:textColor="?attr/bhargo_color_one"
+                                android:textSize="@dimen/_8sdp"
+                                app:customFont="@string/font_name_semi_bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_watsApp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/only_right_rounded"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/iv_gitrc_whatsapp"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/accessories_whatsapp_icon" />
+                            <com.bhargo.user.custom.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:text="WhatsApp"
+                                android:paddingLeft="@dimen/_2sdp"
+                                android:textColor="?attr/bhargo_color_seven"
+                                android:textSize="@dimen/_8sdp"
+                                app:customFont="@string/font_name_semi_bold"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

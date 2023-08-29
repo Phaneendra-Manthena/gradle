@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_selected_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/control_input_text_size"
+            android:text="@string/material_calendar_friday"
+            android:textColor="?attr/bhargo_color_ten"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/divider2" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_calendar_Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="@dimen/display_text_marginBottom"
+            android:textSize="@dimen/control_input_text_size"
+            android:textColor="?attr/bhargo_color_ten"
+            app:customFont="@string/font_satoshi" />
+    </LinearLayout>
+</LinearLayout>

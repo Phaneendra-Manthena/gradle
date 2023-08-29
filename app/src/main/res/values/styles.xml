@@ -1,0 +1,752 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimary</item>
+        <item name="bhargo_color_two">@color/colorPrimary</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLight</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="bhargo_color_four">@color/bhargo_color_four</item>
+        <item name="bhargo_color_five">@color/bhargo_color_five</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item> text color
+        <item name="bhargo_color_nine">@color/theme_bhargo_six</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_seven</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen</item><!--Assessment List BG LightBlue color-->
+
+    </style>
+
+    <style name="AppTheme2" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme2</item><!--Tool bar color-->
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme2</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme2</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme2</item> <!--AppsList top card designation bg color-->
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme2</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six2</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight2</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine2</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten2</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven2</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve2</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen2</item><!--Assessment List BG LightBlue color-->
+    </style>
+
+    <style name="AppTheme3" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme3</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme3</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme3</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme3</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme3</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme3</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six3</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight3</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine3</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten3</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven3</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve3</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen3</item><!--Assessment List BG LightBlue color-->
+    </style>
+    <style name="AppTheme4" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme4</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme4</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme4</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme4</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme4</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme4</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!--// text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six4</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight4</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine4</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten4</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven4</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve4</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen4</item><!--Assessment List BG LightBlue color-->
+    </style>
+    <style name="AppTheme5" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme5</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme5</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme5</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme5</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme5</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme5</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six5</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight5</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine5</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten5</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven5</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve5</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen5</item><!--Assessment List BG LightBlue color-->
+    </style>
+    <style name="AppTheme6" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme6</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme6</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme6</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme6</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme6</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme6</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item><!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six6</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight6</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine6</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten6</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven6</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve6</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen6</item><!--Assessment List BG LightBlue color-->
+    </style>
+    <style name="AppTheme7" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTheme7</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTheme7</item>
+        <item name="colorAccent">@color/description_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialog</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <item name="bhargo_color_one">@color/colorPrimaryTheme7</item>
+        <item name="bhargo_color_two">@color/colorPrimaryTheme7</item>
+        <item name="bhargo_color_three">@color/colorPrimaryLightTheme7</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTheme7</item>
+        <item name="bhargo_color_four">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_five">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_six">@color/theme_bhargo_color_two</item>
+        <item name="bhargo_color_seven">@color/ev_green</item>
+        <item name="bhargo_color_eight">@color/theme_bhargo_text_color1</item> <!-- text color-->
+        <item name="bhargo_color_nine">@color/theme_bhargo_six7</item><!-- Search Box color-->
+        <item name="bhargo_color_ten">@color/theme_bhargo_color_two</item><!-- text inside EditText Box color-->
+        <item name="bhargo_color_eleven">@color/theme_bhargo_eight7</item><!-- Description color-->
+        <item name="bhargo_color_twelve">@color/theme_bhargo_nine7</item><!-- Toolbar title TextColor-->
+        <item name="bhargo_color_thirteen">@color/theme_bhargo_ten7</item><!--AppsList Item Hint text color-->
+        <item name="bhargo_color_fourteen">@color/theme_bhargo_eleven7</item><!--AppsListBG LightBlue color-->
+        <item name="bhargo_color_fifteen">@color/theme_bhargo_twelve7</item><!--Rating LightBlue color-->
+        <item name="bhargo_color_sixteen">@color/theme_bhargo_thirteen7</item><!--Assessment List BG LightBlue color-->
+    </style>
+
+
+    <style name="MaterialTheme" parent="Base.Theme.MaterialComponents.Light.DarkActionBar">
+
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <!--        <item name="android:windowFullscreen">false</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolor</item>
+        <!--        <item name="android:navigationBarColor">-->
+        <!--            @android:color/transparent-->
+        <!--        </item>-->
+
+        <!-- Optional, if your app is drawing behind the status bar also. -->
+        <!--        <item name="android:statusBarColor">-->
+        <!--            @android:color/transparent-->
+        <!--        </item>-->
+    </style>
+
+    <style name="both_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_wrap" parent="android:Theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/fbutton_color_midnight_blue</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="AppThemeNavigation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Transparent_Theme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:windowBackground">@drawable/rounded_corners</item>
+
+    </style>
+
+    <style name="ProgressDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+
+
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--                    Alert dialog styles             -->
+    <style name="AlertDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--        <item name="android:windowAnimationStyle">@style/My.Animation.AlertDialog</item>-->
+    </style>
+
+    <style name="style">
+        <!--        <item name="colorAccent">@color/white</item>-->
+        <item name="colorAccent">?attr/colorAccent</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="android:Widget.DeviceDefault.Light.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/icons_filebrowse_drawable</item>
+        <item name="android:minHeight">@dimen/rating_min_height</item>
+        <item name="android:maxHeight">@dimen/rating_min_width</item>
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/icons_voice_recording</item>
+        <item name="android:indeterminateDrawable">@drawable/icons_camera_drawable</item>
+    </style>
+
+    <style name="ChatBackgroundCopy" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/chat_bg</item>
+    </style>
+
+    <style name="ChatBackground" parent="AppTheme">
+        <item name="android:windowBackground">@color/apps_list_bg</item>
+    </style>
+
+    <style name="control_padding" parent="AppTheme">
+        <!--    <style name="control_padding" parent="@android:style/LinearLayout">-->
+
+        <!--        <item name="android:paddingLeft">10dp</item>-->
+        <!--        <item name="android:paddingRight">10dp</item>-->
+        <!--        <item name="android:paddingTop">10dp</item>-->
+        <!--        <item name="android:paddingBottom">10dp</item>-->
+        <item name="android:paddingLeft">@dimen/_5sdp</item>
+        <item name="android:paddingRight">@dimen/_5sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+    </style>
+
+
+    <style name="edittextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:paddingEnd">@dimen/dimen_15</item>
+        <item name="android:paddingStart">@dimen/dimen_15</item>
+        <item name="android:textColor">@color/text_title_color</item>
+        <item name="android:textSize">@dimen/dimen_15</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+
+    <!--
+        <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            &lt;!&ndash; No backgrounds, titles or window float &ndash;&gt;
+            <item name="android:windowBackground">@color/white</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+        </style>
+
+    -->
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="AlertDialogMaterialTheme">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CutShapeTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/CutShapeAppearance</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CutShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="RoundShapeTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance</item>
+        <!-- <item name="android:textStyle">bold</item>
+         <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>-->
+    </style>
+
+    <style name="RoundShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@drawable/popup_background</item>
+        <item name="android:background">@drawable/popup_background</item>
+
+    </style>
+
+    <style name="DisplayTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.9</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/display_text_marginBottom</item>
+        <item name="android:layout_marginTop">@dimen/display_text_marginTop</item>
+        <item name="android:textSize">@dimen/display_text_size</item>
+        <item name="android:textColor">?attr/bhargo_color_eight</item>
+    </style>
+
+    <style name="HintTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/display_text_marginBottom</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+        <item name="android:textColor">?attr/bhargo_color_eleven</item>
+    </style>
+
+    <style name="ControlInputStyle" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingStart">@dimen/control_input_padding_start</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+    </style>
+
+    <style name="ControlURLViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">@color/control_radio_button_selected</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+    </style>
+
+    <style name="ControlButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+        <item name="android:background">@drawable/default_button_rounded_corners</item>
+    </style>
+    <style name="ControlButtonStyleDefault" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+        <item name="android:background">@drawable/default_button_rounded_corners</item>
+    </style>
+
+
+    <style name="ControlLargeInputStyle" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start|center_vertical|top</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">@dimen/control_large_input_height</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingStart">@dimen/control_input_padding_start</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+    </style>
+
+    <style name="ControlDropDownStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:background">@drawable/control_dropdown_background_icon_default</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingStart">@dimen/control_input_padding_start</item>
+        <item name="android:paddingEnd">@dimen/control_input_padding_end</item>
+    </style>
+
+
+    <style name="ErrorTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginBottom">@dimen/error_text_margin</item>
+        <item name="android:layout_marginTop">@dimen/error_text_margin</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableRight">@drawable/ic_mandatory_star_red_24dp</item>
+    </style>
+
+
+    <style name="CallMessageErrorTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/error_text_margin</item>
+        <item name="android:layout_marginTop">@dimen/error_text_margin</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+
+    </style>
+
+    <style name="RadioButtonDefault" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/control_radio_button_default</item>
+        <item name="colorControlActivated">@color/control_radio_button_selected</item>
+<!--                <item name="colorControlActivated">?attr/bhargo_color_one</item>-->
+    </style>
+
+    <style name="RadioButtonDisable" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/control_disable_bg_color</item>
+    </style>
+
+    <style name="RadioButtonError" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/control_error_color</item>
+    </style>
+
+    <style name="CheckListDefault" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:background">@drawable/control_checklist_background_icon_default</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingStart">@dimen/control_input_padding_start</item>
+        <item name="android:paddingEnd">@dimen/control_input_padding_end</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+    </style>
+
+    <style name="DatePickerDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:colorAccent">@color/control_calendar_selected_bg_color</item>
+        <item name="android:colorControlActivated">@color/control_calendar_selected_bg_color</item>
+        <item name="android:textColorSecondary">@color/control_calendar_selected_bg_color</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerNegativeButtonStyle
+        </item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerPostiveButtonStyle</item>
+        <item name="android:positiveButtonText">@string/apply</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="DatePickerPostiveButtonStyle" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:textColor">@color/control_calendar_selected_bg_color</item>
+    </style>
+
+    <style name="DatePickerNegativeButtonStyle" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+    </style>
+
+    <style name="AddMoreButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/add_more_button_width</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:background">@drawable/default_button_rounded_corners</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+    </style>
+
+    <style name="DeleteButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/add_more_button_width</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:background">@drawable/default_button_rounded_corners</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+        <item name="android:paddingTop">@dimen/control_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/control_input_padding_bottom</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/rating_default</item>
+        <item name="colorControlActivated">@color/rating_activated</item>
+    </style>
+
+
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--            <item name="android:progressDrawable">@drawable/custom_progress_bar_layer_list</item>-->
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="TextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/bhargo_color_ten</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+    </style>
+
+    <style name="ProfileButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_height">@dimen/control_input_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/profile_button_rounded_corners</item>
+        <item name="android:textSize">@dimen/profile_post</item>
+        <item name="android:paddingTop">@dimen/dimen_5</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+        <item name="android:paddingStart">@dimen/dimen_10</item>
+        <item name="android:paddingEnd">@dimen/dimen_10</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="dataViewerTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+<!--        <item name="android:textColor">?attr/bhargo_color_ten</item>-->
+        <item name="android:textColor">@color/control_input_text_color</item>
+        <item name="android:textSize">@dimen/control_input_text_size</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeTopRight">@dimen/dimen_10</item>
+        <item name="cornerSizeTopLeft">@dimen/dimen_10</item>
+    </style>
+    <style name="roundedImageViewAllCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeTopRight">@dimen/dimen_10</item>
+        <item name="cornerSizeTopLeft">@dimen/dimen_10</item>
+        <item name="cornerSizeBottomLeft">@dimen/dimen_10</item>
+        <item name="cornerSizeBottomRight">@dimen/dimen_10</item>
+    </style>
+    <style name="ErrorTextStyleDefault" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/delete_icon</item>
+        <item name="android:layout_marginBottom">@dimen/error_text_margin</item>
+        <item name="android:layout_marginTop">@dimen/error_text_margin</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+    </style>
+
+    <style name="ClickableView">
+        <item name="colorControlHighlight">@android:color/darker_gray</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="threedotcolor" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="tint">#ffffff</item>
+
+
+    </style>
+
+    <style name="counterText">
+        <item name="android:textColor">#aa5353cc</item>
+    </style>
+
+    <style name="counterOverride">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+</resources>

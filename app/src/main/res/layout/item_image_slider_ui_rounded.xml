@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.bhargo.user.utils.RoundedImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/iv_sliderImageItem"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="5dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="false" />
+
+
+    <!--    <ImageView-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:id="@+id/iv_sliderImageItem"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <TextView
+        android:id="@+id/sliderIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/mat_white"
+        android:textSize="10sp" />
+
+</LinearLayout>

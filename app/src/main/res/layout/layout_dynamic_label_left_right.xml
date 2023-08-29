@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_main_inside"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_leftRightWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <include layout="@layout/layout_display_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="@dimen/control_input_height"
+            android:background="@drawable/control_with_radius_background"
+            android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/sectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_dynamicLabel"
+                style="@style/ControlURLViewStyle"
+                android:visibility="visible"
+                android:paddingStart="@dimen/dimen_10"
+                android:paddingEnd="1dp"
+                android:textColor="@color/control_input_text_color"
+                app:customFont="@string/font_satoshi" />
+        </LinearLayout>
+        <LinearLayout
+            android:backgroundTint="@android:color/transparent"
+            android:id="@+id/ll_editor"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <net.dankito.richtexteditor.android.RichTextEditor
+                android:padding="@dimen/_8sdp"
+                android:id="@+id/text_editor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp" />
+            <net.dankito.richtexteditor.android.toolbar.AllCommandsEditorToolbar
+                android:visibility="gone"
+                android:id="@+id/editorToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_error_text"/>
+
+</LinearLayout>
+</LinearLayout>

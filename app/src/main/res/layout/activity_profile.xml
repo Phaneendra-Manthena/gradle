@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.ProfileActivityOld">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_circle_Profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/allapps" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_ProfileNameTitle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="0.3"
+                app:customFont="@string/font_name" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_ProfileName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="0.7"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:customFont="@string/font_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileDesignationTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Designation"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileDesignation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="0.7"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="Designation"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileRoleTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="Role"
+            android:layout_weight="0.3"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileRole"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:text="Role"
+            android:textColor="@color/black"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileDepartmentTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:text="Department"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileDepartment"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="Department"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileEmailTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Email"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfileEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:layout_weight="0.7"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfilePhoneNoTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:text="Phone no"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="0.3"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_ProfilePhoneNo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_weight="0.7"
+            android:text="Phone no"
+            app:customFont="@string/font_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center">
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/btn_logout"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@color/mat_white" />
+    </LinearLayout>
+
+</LinearLayout>

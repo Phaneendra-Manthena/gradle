@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/mapLayout"
+    android:layout_height="wrap_content">
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:textColor="@color/detailed_page_display_text_color"
+        android:text="@string/displayName"
+        app:customFont="@string/font_satoshi" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:cardElevation="1dp">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200" />
+    </androidx.cardview.widget.CardView>
+    <View
+        android:id="@+id/vDisplayDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@color/detailed_page_divider_color" />
+</LinearLayout>

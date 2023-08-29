@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_item_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corners_dataviewer"
+    android:layout_margin="@dimen/dimen_5"
+    android:layout_height="@dimen/dimen_200">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_dv_gitr"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:layout_height="@dimen/dimen_80"
+       android:scaleType="fitXY"
+        android:src="@drawable/sample1"/>
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/ctv_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="end"
+        android:text="value"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:background="@drawable/rounded_corner_bg_primary_color"
+        app:customFont="@string/font_satoshi_bold"/>
+
+</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+            <com.bhargo.user.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_gitr_Heading"
+            style="@style/dataViewerTextStyle"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_4"
+            app:customFont="@string/font_satoshi_bold"
+            android:text="@string/heading"/>
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_gitr_SubHeading"
+                android:layout_height="wrap_content"
+                style="@style/dataViewerTextStyle"
+                android:textColor="?attr/bhargo_color_ten"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                app:customFont="@string/font_satoshi"
+                android:text="@string/heading"/>
+
+            <LinearLayout
+                android:id="@+id/ll_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

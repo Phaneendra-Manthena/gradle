@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_question"
+        android:src="@drawable/icons_image"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/displayName"
+        android:textColor="?attr/bhargo_color_ten"
+        android:textSize="@dimen/_14sdp"
+        app:customFont="@string/font_satoshi_bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_questionParagraphContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rg_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"/>-->
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/ll_onlyAnswers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

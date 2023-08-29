@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_marker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_left_right_rounded_corners_white_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/uFScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/location_info"
+                        android:textColor="?attr/bhargo_color_ten"
+                        android:textSize="@dimen/title_text_size_twenty"
+                        app:customFont="@string/font_satoshi_bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_markerCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_icon_cancel" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="vertical">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/ctvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location"
+                        android:textColor="?attr/bhargo_color_ten"
+                        android:textSize="@dimen/control_input_text_size"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        app:customFont="@string/font_satoshi_bold" />
+
+                    <LinearLayout
+                        android:id="@+id/llIndexColumns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.InfoFragment">
+    <FrameLayout
+        android:id="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/semi_rounded_bg_apps_list"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_20"
+            android:background="@drawable/search_bg">
+
+            <AutoCompleteTextView
+                android:id="@+id/cet_usersSearch"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:textSize="@dimen/user_name_size"
+                android:gravity="center_vertical|start"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:hint="@string/search"
+                android:background="@null"
+                android:textColorHint="@color/login_mobile_no_hint"
+                android:textColor="@color/control_input_text_color"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_icon_search_grey"/>
+
+        </LinearLayout>
+    </FrameLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/layout_no_messages"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_chats"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_150"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/no_chats" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_licence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_below="@+id/iv_chats"
+            android:textColor="@color/control_input_text_color"
+            android:textSize="@dimen/text_size_18"
+            android:text="@string/you_dont_have_any_messages"
+            android:visibility="visible"
+            app:customFont="@string/font_satoshi_bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat_list"
+        android:layout_below="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_new_chat"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:backgroundTint="?attr/bhargo_color_one"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/white"
+        app:maxImageSize="30dp"
+        android:scaleType="center"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:src="@drawable/new_session" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.AssessmentCompleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_AssessmentCompleteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/test_complete"
+            android:textColor="?attr/bhargo_color_eight"
+            android:textSize="@dimen/_14sdp"
+            app:customFont="@string/font_name_bold" />
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_AssessmentComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/assessment_success"
+            android:textColor="?attr/bhargo_color_eight"
+            android:textSize="@dimen/_14sdp"
+            app:customFont="@string/font_name_bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_marksObtained_title"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="right"
+                android:text="@string/marks_obtained"
+                android:textColor="?attr/bhargo_color_eight"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_name_bold" />
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_marksObtained"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="?attr/bhargo_color_eight"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_name_bold" />
+
+        </LinearLayout>
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctv_marksObtained_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/qualified"
+            android:textColor="?attr/bhargo_color_eight"
+            android:textSize="@dimen/_14sdp"
+            app:customFont="@string/font_name_bold" />
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/cbt_done"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ctv_AssessmentCompleteText"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="?attr/bhargo_color_seven"
+            android:text="Done"
+            android:textColor="@color/mat_white" />
+    </LinearLayout>
+</RelativeLayout>

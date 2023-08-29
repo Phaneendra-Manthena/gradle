@@ -1,0 +1,461 @@
+<resources>
+    <string name="app_name">Default Mobile Login APK</string>
+    
+    
+    <string name="font_name">Poppins-Regular.otf</string>
+    <string name="font_satoshi">Satoshi-Medium.otf</string>
+    <string name="font_satoshi_italic">Satoshi-Italic.otf</string>
+    <string name="font_satoshi_bold">Satoshi-Bold.otf</string>
+    <string name="font_satoshi_Regular">Satoshi-Regular.otf</string>
+    <string name="font_name_semi_bold">Poppins-SemiBold.otf</string>
+    <string name="font_name_bold">Poppins-Bold.otf</string>
+    <string name="font_name_italic">Poppins-Italic.otf</string>
+    <string name="failed_to_create_directory">Failed to create directory</string>
+    <string name="displayName">Display Name</string>
+    <string name="hint">Hint</string>
+    <string name="capture">Use Camera</string>
+    <string name="gallery">Use Gallery</string>
+    <string name="retake">Retake</string>
+    <string name="tap_here_text">Tap here</string>
+    <string name="button">Button</string>
+    <string name="tap_here">Tap here</string>
+    <string name="tap_here_to_select">Tap here to select</string>
+    <string name="improve_user">Improve User</string>
+
+    <string name="dynamic_label">Dynamic Label</string>
+    <string name="map">Map</string>
+    <string name="retry">Retry</string>
+    <string name="searching_for_gps">Searching for GPS</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="enable">Enable</string>
+    <string name="url">URL</string>
+    <string name="base64">Base64</string>
+    <string name="upload_image">Upload Image</string>
+
+
+    <string name="current_location">Current Location</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="menu_search">Search</string>
+    <string name="other">Other</string>
+    <string name="upload">Upload</string>
+    <string name="signature">Signature</string>
+    <string name="video_recorder">Video Recorder</string>
+    <string name="enter_mobile_no">Mobile number</string>
+    <string name="sign_in">Sign In</string>
+    <string name="pls_enter_otp">OTP NUMBER</string>
+
+    <string name="no_records">No Records</string>
+    <string name="error_text">Field should not be empty</string>
+    <string name="tap_here_to_select_file">Tap here to Browse File</string>
+    <string name="add_more">Add more</string>
+    <string name="finding_location">Finding location..</string>
+    <string name="sending_files">Sending files..</string>
+    <string name="get_data">Apply </string>
+    <string name="please_wait">Please wait...</string>
+    <string name="no_internet">No Internet</string>
+    <string name="error">Error</string>
+    <string name="server_busy_try_again">Server busy try again ...</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+
+    <string name="saveandsubmit">Save &amp; Submit</string>
+    <string name="data_saved_successfully">Data saved successfully</string>
+    <string name="data_updated_successfully">Data updated successfully</string>
+    <string name="data_deleted_successfully">Data deleted successfully</string>
+    <string name="no_of_records">No. of Records</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="apps_list">Apps</string>
+
+
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_query">SAVE QUERY</string>
+    <string name="info">Chats</string>
+    <string name="e_learning">E Learning</string>
+    <string name="videos">Videos</string>
+    <string name="inprogress">No Records!</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="resend">Resend OTP</string>
+    <string name="dont_get_code">Don\'t get the code?</string>
+    <string name="tasks">Tasks</string>
+
+    <string name="sms">SMS</string>
+    <string name="email">Email</string>
+    <string name="inapp">Inapp</string>
+    <string name="search_apps">Search apps</string>
+    <string name="org_name">Org Name</string>
+    <string name="pls_check_network">Please check network connection</string>
+    <string name="data_submitted_successfully">Data Submitted successfully</string>
+    <string name="no">No</string>
+    <string name="records">Records</string>
+    <string name="app_name_str">App Name</string>
+    <string name="synchronizing_data">Synchronizing data..</string>
+    <string name="file_not_found">File not found</string>
+    <string name="version">Version</string>
+    <string name="search_usersorgroups">Search Users or groups</string>
+    <string name="startchat">Start chat</string>
+    <string name="typeamessage">Type a message&#8230;</string>
+    <string name="send_button">Send</string>
+    <string name="last_message">Last message</string>
+    <string name="last_message_date">Date</string>
+    <string name="zero">0</string>
+    <string name="document">Document</string>
+    <string name="image">Image</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="location">Location</string>
+    <string name="camera">Camera</string>
+    <string name="apps">Apps</string>
+    <string name="applications">Applications</string>
+    <string name="open_gallery">Gallery</string>
+    <string name="press_chat_icon">Press chat icon to start a Conversation</string>
+    <string name="offline">offline</string>
+    <string name="fail">Fail</string>
+    <string name="loading_apps">Loading Apps...</string>
+    <string name="loading_reports">Loading Reports...</string>
+    <string name="sender_name">Sender Name</string>
+    <string name="select">Select</string>
+
+
+    <string name="dashboard">Dash Board</string>
+    <string name="reports">Reports</string>
+    <string name="deploy">Deploy</string>
+    <string name="app_type_selection">App Type Selection</string>
+    <string name="group_info">Group Info</string>
+    <string name="individual_info">Individual Info</string>
+    <string name="no_group_select">No Group Select</string>
+    <string name="no_individual_select">No Individual Select</string>
+    <string name="child_form">Child Form</string>
+    <string name="query_form">Query Form</string>
+    <string name="data_collection">Data Collection</string>
+    <string name="module">Module</string>
+    <string name="share">Share</string>
+    <string name="no_data_default">-</string>
+    <string name="add_new">Add New</string>
+    <string name="designation">Designation</string>
+    <string name="delivered">Delivered</string>
+    <string name="no_users_in_this_organisation">No Users in this Organization</string>
+    <string name="people">People</string>
+    <string name="groups">Groups</string>
+    <string name="view_all">View All</string>
+    <string name="search_videos">Search Videos</string>
+    <string name="search_elearning">Search E Learning</string>
+    <string name="test_complete">Test Completed</string>
+    <string name="assessment_success">Assessment Submitted successfully</string>
+    <string name="question">Question</string>
+    <string name="finish">Finish</string>
+    <string name="start">Start</string>
+    <string name="douwanttoconfirm">Submit?</string>
+    <string name="cancel">Cancel</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="visited">Visited</string>
+    <string name="not_visited">Not Visited</string>
+    <string name="answered">Answered</string>
+    <string name="not_answered">Not Answered</string>
+    <string name="download_certificate">Download Certificate</string>
+    <string name="bhargo_certificate">Bhargo Certificate</string>
+    <string name="marks_obtained">Marks Obtained :</string>
+    <string name="qualified">Qualification staus</string>
+    <string name="in_tasks">In Tasks</string>
+    <string name="out_tasks">Out Tasks</string>
+    <string name="content">Content</string>
+    <string name="search_in_tasks">Search InTasks</string>
+    <string name="search_tasks">Search Tasks</string>
+    <string name="create_new_task">Create New Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_desc">Description</string>
+    <string name="label">Label</string>
+
+    <string name="query_string">Query String</string>
+    <string name="delimiter">Delimiter</string>
+    <string name="rb_none">None</string>
+
+    <string name="read_more">... Read more</string>
+    <string name="task_content">Task Content</string>
+    <string name="no_content_select">No Content Select</string>
+    <string name="no_app_select">No Application Select</string>
+    <string name="create">Create</string>
+    <string name="to_whom">To Whom</string>
+    <string name="to_whome">To Whom</string>
+    <string name="capture_next_point">\"Capturing Next Point... \"</string>
+    <string name="capture_second_point">Tap here to Capture Second Point</string>
+    <string name="capture_fourth_point">Tap here to Capture Four Point</string>
+    <string name="cap_third_point">Tap here to Capture Three Point</string>
+    <string name="hindi">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</string>
+    <string name="telugu">&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;</string>
+    <string name="english">English</string>
+    <string name="english_l">English ( Default )</string>
+    <string name="tamil">&#2980;&#2990;&#3007;&#2996;&#3021;</string>
+    <string name="marathi">&#2350;&#2352;&#2366;&#2336;&#2368;</string>
+    <string name="kannada">&#3221;&#3240;&#3277;&#3240;&#3233;</string>
+    <string name="sinhala">&#3523;&#3538;&#3458;&#3524;&#3517;</string>
+    <string name="select_language">Select Language</string>
+    <string name="name">Name</string>
+    <string name="role">Role</string>
+    <string name="department">Department</string>
+    <string name="phone_no">Phone no</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure">Are you sure to exit ?</string>
+    <string name="yes">Yes</string>
+    <string name="d_no">No</string>
+    <string name="are_you_sure_del">Are you sure to Delete?</string>
+    <string name="want_to_logout">Do you want to Logout ?</string>
+    <string name="quit_assessment">Do you want to quit assessment ?</string>
+    <string name="assesment">Assessment</string>
+    <string name="pls_wait_while_submitting">Please wait while submitting. . .</string>
+    <string name="pls_wait">Please wait...</string>
+    <string name="please_enter_mobile_number">Please Enter Mobile Number</string>
+    <string name="sign_in_c">SIGN IN</string>
+    <string name="version_4_0">Version 1.0</string>
+    <string name="please_enter_otp">Please Enter OTP</string>
+    <string name="enter_valid_mobile">Please enter valid mobile no</string>
+    <string name="pls_enter_valid_otp">Please enter Valid OTP</string>
+    <string name="tap_to_enter_text">Tap here to enter text</string>
+    <string name="tap_to_enter_number">Tap here to enter number</string>
+    <string name="tap_to_scan_bar_code">Tap here to Scan BarCode</string>
+    <string name="tap_to_scan_qr_code">Tap here to Scan QRCode</string>
+    <string name="tap_to_enter_phone">Tap here to enter Phone number</string>
+    <string name="tap_to_enter_email">Tap here to enter Email</string>
+    <string name="tap_to_enter_large_text">Tap here to enter Larger InputText</string>
+    <string name="tap_to_open_camera">Tap here to open Camera</string>
+    <string name="tap_to_open_gallery">Tap here to open Gallery</string>
+    <string name="tap_to_camera_gallery">Tap here to open Camera / Gallery</string>
+    <string name="audio_formard_5">Audio forward 5 seconds</string>
+    <string name="audio_cannot_forward_5">Audio cannot forward 5 seconds</string>
+    <string name="tap_here_to_enter_percentage">Tap here to enter percentage</string>
+    <string name="tap_to_enter_decimals">Tap here to enter Decimals</string>
+    <string name="tap_enter_password">Tap here to enter Password</string>
+    <string name="tap_to_enter_currency">Tap here to enter Currency</string>
+    <string name="tap_here_to_select_options">Tap here to select options</string>
+    <string name="tap_to_select_dd">Tap here to select Drop down</string>
+    <string name="select_default">Select</string>
+    <string name="tap_second_point">Tap here to Capture Second Point</string>
+    <string name="capturing_next_point">\"Capturing Next Point... \"</string>
+    <string name="tap_to_get_current_loc">Tap here to get Current Location</string>
+    <string name="btn_clear">CLEAR</string>
+    <string name="select_post">Select Post</string>
+
+    <string name="sessionName">Channel Name</string>
+    <string name="sessionImage">Channel Image</string>
+    <string name="group_name">Group Name</string>
+    <string name="group_description">Group Description</string>
+    <string name="enter_session_name">Enter Channel name</string>
+    <string name="select_session_image">Select Channel Image</string>
+    <string name="enter_session_image">Select Channel image</string>
+    <string name="search_group">Search Group</string>
+    <string name="loading_groups">Loading Groups..</string>
+    <string name="creating_session">Creating Channel..</string>
+
+    <string name="request_saved">Request Saved</string>
+    <string name="search_users">Search users</string>
+    <string name="search_posts">Search Posts</string>
+
+    
+    <string name="select_layout_background">Layout Background</string>
+    <string name="color">Color</string>
+    <string name="align_top">Top</string>
+    <string name="align_center">Center</string>
+    <string name="align_bottom">Bottom</string>
+    <string name="layout_background">LayoutBackground</string>
+    <string name="gradient_one">GradientOne</string>
+    <string name="gradient_two">GradientTwo</string>
+    <string name="top_to_bottom">TopToBottom</string>
+    <string name="bottom_to_top">BottomToTop</string>
+    <string name="left_to_right">LeftToRight</string>
+    <string name="right_to_left">RightToLeft</string>
+    <string name="only_clear">Clear</string>
+    <string name="clear_and_exit">Clear and Exit</string>
+    <string name="no_clear">No Clear</string>
+    <string name="tap_here_to_scan_qr_code">Tap here to Scan QR Code</string>
+    <string name="data">Data</string>
+    <string name="tap_here_to_scan_bar_code">Tap here to Scan BarCode</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="select_time">Select time</string>
+
+    <string name="click_more">More</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="server_response_null">Server Response is null</string>
+
+
+    <string-array name="left_drawer_array">
+        <item>Home</item>
+        <item>Sample</item>
+        <item>Help</item>
+        <item>Favorites</item>
+        <item>Settings</item>
+        <item>Others</item>
+    </string-array>
+    <string name="select_label">Select Category</string>
+
+
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="top">Top</string>
+    <string name="middle">Middle</string>
+    <string name="bottom">Bottom</string>
+    <string name="background_type">Background Type</string>
+    <string name="icon_alignment">Icon Alignment</string>
+    <string name="as_place_holder">As Place Holder</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="rounded_rectangle">Rounded Rectangle</string>
+    <string name="rectangle_rounded_corners">Rectangle Rounded Corners</string>
+    <string name="icon_drawable_left">Icon Drawable Left</string>
+    <string name="icon_drawable_right">Icon Drawable Right</string>
+    <string name="icon_outSide_left">Icon OutSide Left</string>
+    <string name="icon_outSide_right">Icon OutSide Right</string>
+    <string name="choose_file">Choose file</string>
+
+    <string name="ml_training">ML TRAINING</string>
+    <string name="category_image">Category Image</string>
+    <string name="ml_testing">ML TESTING</string>
+    <string name="transparent">Transparent</string>
+    <string name="gradient">Gradient</string>
+    <string name="plain">Plain</string>
+
+    <string name="screen_fit">Screen Fit</string>
+    <string name="scrollable">Scrollable</string>
+    <string name="vertical">Vertical</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="only_wrap">Only WrapContent</string>
+    <string name="only_dp">Only DP</string>
+    <string name="both_wrap_dp">"Both Wrap And DP"</string>
+    <string name="variable">Variable Width</string>
+    <string name="fixed_Width">Fixed Width</string>
+    <string name="bhargo_title">bhargo_title</string>
+    <string name="toolbar_title">Toolbar Title</string>
+    <string name="font_color">Font Color</string>
+    <string name="over_lay_color">Overlay Color</string>
+    <string name="bhargo_icon_back">bhargo_icon_back</string>
+    <string name="bhargo_icon">bhargo_icon</string>
+    <string name="Custom_Width">Custom Width</string>
+    <string name="custom_match_parent">Match Parent</string>
+    <string name="source">Source</string>
+    <string name="time">Time</string>
+    <string name="issue_report">Report to developer</string>
+    <string name="heading">Heading</string>
+    <string name="sub_heading">Sub Heading</string>
+    <string name="blog_heading">Blog Heading</string>
+    <string name="verifyCaptcha">Verify captcha</string>
+    <string name="title">Title</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="default_image">Default Image</string>
+    <string name="required_image">Custom width and height in DP</string>
+    <string name="no_notification_yet">No notification yet</string>
+    <string name="search">Search</string>
+    <string name="only_lanscape">Lanscape</string>
+    <string name="only_potrait">Potrait</string>
+    <string name="please_wait_sync">Please wait...Data sync from server</string>
+    <string name="data_recieved_successfully">Data received successfully</string>
+    <string name="create_new_table">Create New Table</string>
+    <string name="map_existing_table">Map existing table</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="updateorinsert">Insert or Update</string>
+    <string name="delete_session">Delete Channel</string>
+    <string name="loading">Loading...</string>
+    
+    <string name="mangrega">MGNREGA Help line number</string>
+    <string name="timings">(Daily Morning 7:00 AM to Night 10:00 PM)</string>
+    <string name="toll_free_hint">Toll free number</string>
+    <string name="phone_no_hint">Phone number</string>
+    <string name="sms_watsapp_hint">SMS &amp; WhatsApp Number</string>
+    <string name="no_data_available_to_sync">No data available to Sync</string>
+    <string name="synalertmsg">\" Please click on Yes To Transfer Data \"</string>
+    <string name="syncofflineData">Sync Offline Data</string>
+    <string name="submitting_data">Submitting Data..</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="apply">Apply</string>
+    <string name="Delete">Delete</string>
+    <string name="draw_signature">Draw Signature</string>
+    <string name="upload_my_signature">Upload Signature</string>
+    <string name="file_name">File Name</string>
+    <string name="login">Login</string>
+    <string name="choose_an_action">Choose an action</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verify">Verify</string>
+    <string name="didnt_receive_the_otp">Didnt receive the OTP?</string>
+    <string name="resend_otp">\u0020Resend OTP</string>
+    <string name="by_clicking">By clicking, I accept the</string>
+    <string name="termsandconditions">\u0020Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy\u0020|\u0020</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="change_post">Change Post</string>
+    <string name="change">Change</string>
+    <string name="start_recording">"Start Recording"</string>
+    <string name="edit">Edit</string>
+    <string-array name="paging">
+        <item>All</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="default_ui">Default UI</string>
+    <string name="custom_ui">Custom UI</string>
+    <string name="form_validated">FormValidated</string>
+    <string name="you_dont_have_any_messages">You don\'t have any messages</string>
+    <string name="members_list">Members List</string>
+    <string name="new_session">New Channel</string>
+    <string name="created_by">Created By</string>
+    <string name="create_session">Create Channel</string>
+    <string name="topic_name">Topic Name</string>
+    <string name="attempt">Attempt</string>
+    <string name="sample_larger_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
+    <string name="answer_palette">Answer Palette</string>
+    <string name="un_answered">Unanswered</string>
+
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_password">Password</string>
+    <string name="user_id">User ID</string>
+
+    
+    <string name="select_payment_method">Select a payment method</string>
+    <string name="debit_credit_card">Debit/ Credit cards</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="upi">UPI</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="location_details">Location Details</string>
+    <string name="location_info">Info</string>
+    <string name="plus">+</string>
+    <string name="percentage_spl_char">%</string>
+    <string name="rupee_symbol">&#8377;</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdrawl">Withdrawl</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="value">Value</string>
+    <string name="custom_header">Custom Header</string>
+    <string name="fill">Fill</string>
+    <string name="cover">Cover</string>
+    <string name="contain">Contain</string>
+    <string name="ok">OK</string>
+    <string name="signature_view_click">Signature View Click</string>
+    <string name="voice_recording_view_click">VoiceRecording View Click</string>
+    <string name="start_recording_click">Start Recording Click</string>
+    <string name="voice_recording_click">Voice Recording Click</string>
+    <string name="audio_fileupload_click">Audio Fileupload Click</string>
+    <string name="package_name">com.bhargo.user.fileprovider</string>
+    <string name="as">As</string>
+
+</resources>

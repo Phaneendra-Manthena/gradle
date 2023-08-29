@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_15"
+    android:layout_margin="@dimen/dimen_5"
+    android:background="@color/main_layout_bg"
+    tools:context=".wizard.PaymentGatewayTwo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            style="@style/dataViewerTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/select_payment_method"
+            android:textSize="@dimen/header_size"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btnDC"
+                android:layout_width="@dimen/dimen_90"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/rounded_corners_bg_blue"
+                android:drawableTop="@drawable/ic_credit_card"
+                android:drawableTint="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/debit_credit_card"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_11"
+                app:customFont="@string/font_satoshi_Regular" />
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btnInternet"
+                android:layout_width="@dimen/dimen_90"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/rounded_corners_bg_white"
+                android:drawableTop="@drawable/ic_net_banking"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/net_banking"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_11"
+                app:customFont="@string/font_satoshi_Regular" />
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btnUPI"
+                android:layout_width="@dimen/dimen_90"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:background="@drawable/rounded_corners_bg_white"
+                android:drawableTop="@drawable/ic_upi"
+                android:gravity="center"
+                android:padding="@dimen/dimen_5"
+                android:text="@string/upi"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_11"
+                app:customFont="@string/font_satoshi_Regular" />
+        </LinearLayout>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ctPaymentWithHint"
+            style="@style/dataViewerTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Pay with Debit/ Credit Card"
+            android:textSize="@dimen/header_size"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <include
+            layout="@layout/layout_debit_credit_cards" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_netBankingSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15"
+            android:background="@drawable/rounded_corners_default_white_bg_black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/dimen_20">
+
+            <nk.mobileapps.spinnerlib.SearchableSpinner
+                android:id="@+id/searchableSpinner_main"
+                style="@style/ControlDropDownStyle"
+                android:layout_height="@dimen/dimen_40"
+                app:customFont="@string/font_name"
+                app:dialogTitleVisible="false"
+                app:hintText="@string/select_bank" />
+
+
+        </LinearLayout>
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/ce_upi_id"
+            style="@style/ControlInputStyle"
+            android:visibility="gone"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@drawable/rounded_corners_default_white_bg_black"
+            android:hint="Enter your UPI ID"
+            android:inputType="textPersonName"
+            app:customFont="@string/font_satoshi" />
+        <LinearLayout
+            android:id="@+id/ll_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mat_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_pay_now"
+                style="@style/ControlButtonStyle"
+                android:layout_height="@dimen/dimen_42"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:text="Pay Now"
+                android:textSize="@dimen/text_size_16"
+                app:customFont="@string/font_satoshi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+TextInput   :   text,visible,enable,clear,
+                displayName:textSize,textStyle,textColor
+
+                displayName,displayNameVisibility,hint,defaultValue,
+                readFromBarCode,readFromQRCode,googleLocationSearch,voiceText,
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,
+
+NumericInput:   text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                readFromBarCode,readFromQRCode,
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,upperLimit,upperLimitValue,
+                lowerLimit,lowerLimitValue,maximumCharactersLimit,maximumCharactersLimitValue,
+                textSize,textStyle,textColor
+Phone       :   text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                readFromBarCode,readFromQRCode,
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,cappingDigits,cappingDigitsValue
+                textSize,textStyle,textColor
+Email       :   text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                readFromBarCode,readFromQRCode,
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,
+                textSize,textStyle,textColor
+LargeInput  :   text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,
+                maxCharacters,maxCharactersValue,MinCharacters,minCharactersValue,
+                textSize,textStyle,textColor
+Camera      :   imagePath,gpsLocation,visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,maxUploadSize,maxUploadSizeValue,mimUploadSize,mimUploadSizeValue
+                imageWithGPS,capture,fileBrowsing,captureOrientationType,
+                textSize,textStyle,textColor
+FileBrowsing:   filePath,visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,maxUploadSize,maxUploadSizeValue,mimUploadSize,mimUploadSizeValue
+                enableExtensions,extensionsListItems,enableScan,
+                textSize,textStyle,textColor
+Date        :   selectedDate,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                currentDateAsDefault
+                mandatory,mandatoryErrorMessage,uniqueField,uniqueFieldErrorMessage,
+                betweenStartAndEndDate,startDateValue,EndDateValue,beforeCurrentDate,afterCurrentDate
+                getYearFromSelection,getMonthFromSelection,getDayFromSelection,getDateFromSelection,
+                textSize,textStyle,textColor
+CheckBox    :   selectedItem(Object-ID,Name),visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,
+                sortByAlphabeticOrder,allowOtherChoice,
+                listOfItems(Object -ID,Name)
+                textSize,textStyle,textColor
+RadioButton :   selectedItem(Object-ID,Name),visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,
+                sortByAlphabeticOrder,allowOtherChoice,horizontalAlignment
+                listOfItems(Object -ID,Name)
+                textSize,textStyle,textColor
+DropDown    :   selectedItem(Object-ID,Name),visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,
+                sortByAlphabeticOrder,allowOtherChoice,sortByChronologicalOrder,sortByAscendingOrder,
+                sortByDescendingOrder
+                listOfItems(Object -ID,Name)
+                textSize,textStyle,textColor
+CheckList   :   listOfSelectedItems(Object-ID,Name),visible,enable,clear,displayName,displayNameVisibility,hint,
+                mandatory,mandatoryErrorMessage,
+                sortByAlphabeticOrder,allowOtherChoice,sortByChronologicalOrder,sortByAscendingOrder,
+                sortByDescendingOrder
+                listOfItems(Object -ID,Name)
+                rowSelectionType
+                textSize,textStyle,textColor
+Rating      :   selectedRating,visible,enable,clear,displayName,displayNameVisibility,hint,defaultRating,
+                NoOfItems,
+                disableCount,ratingType,customItemNames,customItemNamesList
+                mandatory,mandatoryErrorMessage,
+                textSize,textStyle,textColor
+VoiceRecording: voiceRecordPath,visible,enable,clear,displayName,displayNameVisibility,hint
+                mandatory,mandatoryErrorMessage,minDuration,minDurationValue,maxDuration,maxDurationValue,
+                audioFormat,audioFormatList,uploadAudioFile,
+                textSize,textStyle,textColor
+VideoRecording: videoRecordPath,visible,enable,clear,displayName,displayNameVisibility,hint
+                mandatory,mandatoryErrorMessage,minDuration,minDurationValue,maxDuration,maxDurationValue,
+                videoFormat,videoFormatList,uploadVideoFile,
+                textSize,textStyle,textColor
+AudioPlayer   : uploadedFilePath,visible,enable,clear,displayName,displayNameVisibility,hint,
+                stayAwake,background
+                textSize,textStyle,textColor
+VideoPlayer   : uploadedFilePath,visible,enable,clear,displayName,displayNameVisibility,hint,
+                stayAwake,background
+                textSize,textStyle,textColor
+Percentage    : text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                mandatory,mandatoryErrorMessage
+                textSize,textStyle,textColor
+Signature     : signaturePath,visible,enable,clear,displayName,displayNameVisibility,hint
+                mandatory,mandatoryErrorMessage
+                uploadImage,signatureOnScreen,
+                textSize,textStyle,textColor
+URLLink       : url,visible,enable,clear,displayName,displayNameVisibility,hint
+                disableClick,hideURL,urlPlaceholderText
+                textSize,textStyle,textColor
+Decimal       : text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                mandatory,mandatoryErrorMessage,
+                decimalCharacters,noOfCharactersAfterDecimal,
+                textSize,textStyle,textColor
+Password      : text,visible,enable,clear,displayName,displayNameVisibility,hint
+                mandatory,mandatoryErrorMessage,
+                showOrHideOption,encryptPassword,
+                textSize,textStyle,textColor
+Currency      : text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                mandatory,mandatoryErrorMessage,min,minValue,max,maxValue,
+                selectCurrency,selectedCurrencyList,strikeText,
+                textSize,textStyle,textColor
+DynamicLabel  : text,visible,enable,clear,displayName,displayNameVisibility,hint,defaultValue,
+                htmlViewer,makeItAsSection,displayAsBarCode,enableUNICODE,UNICODEFormat,displayAsQRCode,
+                maskCharacters,maskCharacterType,noOfCharToMask,partialMaskDirection,strikeText
+                textSize,textStyle,textColor,layoutBackgroundColor
+Image         : imagePath,visible,enable,clear,displayName,displayNameVisibility,hint,
+                imageSourceType,multipleImage,noOfImages,multipleImageAlignmentType,imagePathsList
+                 textSize,textStyle,textColor,
+Button        : text,visible,enable,clear,displayName,displayNameVisibility,hint
+                disableClick,activeStatus,iconPath
+                buttonShape,typeOfButton,buttonBackgroundColor,iconAlignment
+                textSize,textStyle,textColor,
+AutoNumber    :
+Time          : selectedTime,visible,enable,clear,displayName,displayNameVisibility,hint
+                mandatory,mandatoryErrorMessage,beforeCurrentTime,afterCurrentTime,
+                betweenStartAndEndTime,startTime,endTime,
+                currentTime,timeFormat,timeFormatType,optionFormat,optionFormatType
+                  textSize,textStyle,textColor
+CountDownTimer: text,visible,enable,clear,displayName,displayNameVisibility,hint,
+                textHr,textMin,textSec,
+                displayFormat,displayFormatType,autoStart
+                textSize,textStyle,textColor,timerColor
+CountUpTimer  : text,visible,enable,clear,displayName,displayNameVisibility,hint,
+                textHr,textMin,textSec,
+                displayFormat,displayFormatType,autoStart
+                textSize,textStyle,textColor,timerColor
+ViewFile      : fileLink,visible,enable,clear,displayName,displayNameVisibility,hint,
+                hideFileLink,downloadFile,
+                textSize,textStyle,textColor
+
+
+GPS(Advanced)  : gpsPoint,lat,long,visible,enable,clear,displayName,displayNameVisibility,hint,
+                locationModeType,accuracy,gpsType,typeOfInterval,distanceInterval,timeInterval
+                mandatory,mandatoryErrorMessage,saveLatitudeAndLongitudeInSeparateCol,showMap
+                 textSize,textStyle,textColor
+SubForm        : visible,enable,clear,displayName,displayNameVisibility,hint,minimumRows,maximumRows,
+                 displayOrientation,twoColumnsGrid,enableSearch,
+                 textSize,textStyle,textColor
+GridControl    : visible,enable,clear,displayName,displayNameVisibility,hint,minimumRows,maximumRows,
+                 displayOrientation,twoColumnsGrid,enableSearch,fixedWidth,noOfColumnsInGrid,hideColumnNames,
+                 hideBorder,enableSearch
+                 textSize,textStyle,textColor
+SectionControl  : visible,enable,clear,displayName,displayNameVisibility,hint,enableCollapseExpand
+                 textSize,textStyle,textColor,sectionBackGroundColor
+LiveTracking    : visible,enable,clear,displayName,displayNameVisibility,hint,locationMode,accuracy,
+                  typeOfInterval,distanceInterval,timeInterval
+                  textSize,textStyle,textColor,
+User             : selectedUser,text,visible,enable,clear,displayName,displayNameVisibility,hint,userType,userGroups
+                  textSize,textStyle,textColor
+Post             : selectedPost,text,visible,enable,clear,displayName,displayNameVisibility,hint,postType,postGroups
+                  textSize,textStyle,textColor,
+AutoCompletion   : selectedItem,text,visible,enable,clear,displayName,displayNameVisibility,hint,
+                   minimumCharactersToSearch,searchKeyAt,googleLocationSearch
+                   textSize,textStyle,textColor,
+DataControl      :selectedItem,text,visible,enable,clear,displayName,displayNameVisibility,hint,
+                   userLocationBinding,postLocationBinding
+                   textSize,textStyle,textColor,
+
+

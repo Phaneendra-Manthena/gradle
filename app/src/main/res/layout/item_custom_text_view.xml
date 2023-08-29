@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customTextViewQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tv_question_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:text="A"
+        android:textColor="?attr/bhargo_color_ten"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_satoshi_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_image"
+            android:visibility="gone" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:text="Questions"
+            android:textColor="?attr/bhargo_color_ten"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_questionParagraphContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <!--    </LinearLayout>-->
+</LinearLayout>
+

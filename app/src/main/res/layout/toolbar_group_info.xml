@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontstyle="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    app:ignore="NamespaceTypo">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_circle_appIcon"
+        android:layout_width="@dimen/dimen_40"
+        android:layout_height="@dimen/dimen_40"
+        android:background="@drawable/bg_circle_user"
+        android:visibility="gone"
+        android:src="@drawable/ic_person_black_36dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:orientation="vertical">
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|bottom"
+            android:layout_gravity="bottom"
+            android:text="@string/app_name"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+
+            fontstyle:customFont="@string/font_satoshi_bold" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/toolbar_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="visible"
+            fontstyle:customFont="@string/font_satoshi" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ib_settings"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_menu_32" />
+    <ImageView
+        android:id="@+id/iv_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_cloud_sync_red_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/ib_logout"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_exit_to_app_black_24dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/ib_done"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:src="@drawable/icon_done"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/_25sdp"
+        app:tint="@color/Red"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llDisplayView"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/cbList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/list_48x48" />
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/cbMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/map_red_48x48" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_assessment_reports"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/icon_reports_d"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_filter_list_black_24dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_action_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_gravity="end"
+        android:visibility="gone"/>
+
+
+
+
+</androidx.appcompat.widget.Toolbar>

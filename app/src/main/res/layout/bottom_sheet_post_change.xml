@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_left_right_rounded_corners_white_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/select_post"
+                    android:textColor="@color/control_input_text_color"
+                    android:textSize="@dimen/title_text_size_twenty"
+                    app:customFont="@string/font_satoshi_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_Cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_icon_cancel" />
+
+            </LinearLayout>
+
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bs_rvPosts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </RelativeLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical|bottom"
+            android:gravity="end|bottom"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomButton
+                android:background="@drawable/rounded_rectangle_default_color"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:id="@+id/btn_Cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/bhargo_color_four"
+                android:textAllCaps="false"
+                app:customFont="@string/font_satoshi_bold"
+                android:textSize="@dimen/profile_post"
+
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"/>
+            <com.bhargo.user.custom.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@drawable/profile_button_rounded_corners"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:textAllCaps="false"
+                android:id="@+id/btn_Change"
+                android:text="@string/change"
+                android:textColor="@color/white"
+                app:customFont="@string/font_satoshi_bold"
+                android:textSize="@dimen/profile_post"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

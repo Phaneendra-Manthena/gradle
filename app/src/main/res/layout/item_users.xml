@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_75sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@drawable/ic_person_black_36dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+            <LinearLayout
+                android:id="@+id/rlmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/iv_check"
+                android:layout_toRightOf="@+id/iv_circle"
+                android:orientation="vertical">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="a"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tvAppDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:visibility="visible"
+                    android:text="Description"
+                    android:textColor="@color/waterfall"
+                    android:textSize="@dimen/_10sdp"
+                    app:customFont="@string/font_name" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_check"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="visible"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_check_black_24dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

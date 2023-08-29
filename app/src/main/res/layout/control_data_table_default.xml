@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+
+        <RelativeLayout
+            android:id="@+id/rlSearchDownloads"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45">
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_toLeftOf="@+id/ll_bts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_marginEnd="@dimen/dimen_5"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corners_default_light_gray_bg">
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:layout_width="0dp"
+                    android:id="@+id/et_search"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10"
+                    android:textSize="@dimen/user_name_size"
+                    android:gravity="center_vertical|start"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:hint="@string/search"
+                    android:background="@null"
+                    android:textColorHint="@color/hint_color"
+                    android:textColor="@color/control_input_text_color"/>
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/ic_icon_search_grey"/>
+
+            </LinearLayout>
+<!--            <user.CustomEditText-->
+<!--                android:id="@+id/et_search"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_toLeftOf="@+id/ll_bts"-->
+<!--                android:background="@drawable/rounded_corners_user_search"-->
+<!--                android:drawableRight="@drawable/quantum_ic_search_grey600_24"-->
+<!--                android:hint="Search..."-->
+<!--                android:inputType="text"-->
+<!--                android:padding="10dp"-->
+<!--                android:singleLine="true"-->
+<!--                android:visibility="visible" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_bts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_pdf"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/pdfdownload_icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_xls"
+                    android:layout_width="@dimen/dimen_45"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/xlsdownload"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_data_table_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@drawable/bottom_left_right_rounded_no_top_default_bg"
+            android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_data_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/tl_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <TableLayout
+                    android:id="@+id/tl_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <TableLayout
+                    android:id="@+id/tl_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_paging"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/dimen_5"
+                android:paddingEnd="@dimen/dimen_5"
+                android:background="@drawable/bg_no"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomTextView
+                    style="@style/DisplayTextStyle"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Show per page :"
+                    app:customFont="@string/font_satoshi" />
+
+                <Spinner
+                    android:id="@+id/sp_pagingsize"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/control_dropdown_background_icon_default"
+                    android:entries="@array/paging"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pagingbts"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/iv_previous"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_no"
+                    android:src="@drawable/ic_arrow_left"
+                    android:text="Pervious"
+                    app:tint="@color/otp_blue"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_page"
+                    style="@style/DisplayTextStyle"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_5"
+                    android:singleLine="true"
+                    android:text="Page 1 of 5"
+                    app:customFont="@string/font_satoshi" />/>
+
+                <ImageButton
+                    android:id="@+id/iv_next"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_no"
+                    android:src="@drawable/ic_icon_right_arrow"
+                    android:text="Next"
+                    app:tint="@color/otp_blue"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <include layout="@layout/layout_error_text" />
+    </LinearLayout>
+
+
+</LinearLayout>

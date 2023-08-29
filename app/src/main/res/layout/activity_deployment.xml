@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_box_divider"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/rectangle_box_divider"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/iv_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_types" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="Application Type"
+                        android:textColor="?attr/bhargo_color_ten"
+                        android:textSize="@dimen/_14sdp"
+                        app:customFont="@string/font_satoshi" />
+
+                    <nk.mobileapps.spinnerlib.SearchableSpinner
+                        android:id="@+id/sp_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/spinner_bg"
+                        app:hintText="@string/select" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Application Name"
+                android:textColor="?attr/bhargo_color_ten"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_satoshi" />
+
+            <nk.mobileapps.spinnerlib.SearchableSpinner
+                android:id="@+id/sp_application_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/spinner_update_bg"
+                app:hintText="@string/select" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctv_createdby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Created By: BLUE0001"
+                android:textColor="?attr/bhargo_color_ten"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:customFont="@string/font_satoshi" />
+
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Group Info"
+                android:id="@+id/tvg"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="?attr/bhargo_color_ten"
+                app:customFont="@string/font_satoshi"/>
+
+            <nk.mobileapps.spinnerlib.SearchableMultiSpinner
+                android:id="@+id/sp_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/spinner_update_bg"
+                app:hintText="Select Groups" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvi"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Individual Info"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="?attr/bhargo_color_ten"
+                app:customFont="@string/font_satoshi" />
+
+            <nk.mobileapps.spinnerlib.SearchableMultiSpinner
+                android:id="@+id/sp_individual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/spinner_update_bg"
+                app:hintText="Select Individuals" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:gravity="center">
+
+                <com.bhargo.user.custom.CustomButton
+                    android:id="@+id/cb_submit"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded_corners"
+                    android:backgroundTint="@color/red"
+                    android:clickable="true"
+                    android:onClick="onClick_Submit"
+                    android:text="Submit"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_satoshi" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

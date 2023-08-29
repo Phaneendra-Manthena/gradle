@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_300"
+    android:background="@drawable/rounded_corners_default_light_gray_bg"
+    android:layout_margin="@dimen/dimen_5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dv_gitr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dimen_5"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_gitr_Heading"
+            style="@style/dataViewerTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:text="@string/heading"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="?attr/bhargo_color_ten"
+            android:textSize="@dimen/user_name_size"
+            app:customFont="@string/font_satoshi_bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_dv_gitr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/tv_gitr_Heading"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="?attr/bhargo_color_eleven"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_dv_gitr"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_play_video_new" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_dv_gitr"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

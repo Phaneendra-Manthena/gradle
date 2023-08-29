@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_subLayoutMain"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/cancel_red"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+</LinearLayout>

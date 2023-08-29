@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangle_box_divider_color_grid_header"
+        android:layout_height="match_parent">
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="@dimen/_2sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:background="@color/on_road_green"
+            android:gravity="center_vertical|center"
+            android:text="@string/label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:customFont="@string/font_name_bold" />
+
+        <ImageView
+            android:id="@+id/iv_sorting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/arrow_spinner_s"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

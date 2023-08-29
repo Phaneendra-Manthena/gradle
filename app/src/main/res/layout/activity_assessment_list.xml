@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.AssessmentListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/MainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/bhargo_color_fourteen"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_SCmain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/qno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_5"
+                        android:text="@string/question"
+                        android:textSize="@dimen/dimen_14"
+                        app:customFont="@string/font_satoshi_bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ll_PN"
+                        android:layout_below="@+id/qno"
+                        android:orientation="horizontal" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/ll_PN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <com.bhargo.user.custom.CustomButton
+                            android:id="@+id/button_previous"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="?attr/bhargo_color_one"
+                            android:gravity="center"
+                            android:text="Previous"
+                            android:textColor="@color/mat_white"
+                            android:textSize="@dimen/text_size_16"
+                            app:customFont="@string/font_satoshi_bold" />
+
+                        <com.bhargo.user.custom.CustomButton
+                            android:id="@+id/button_next"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="?attr/bhargo_color_one"
+                            android:gravity="center"
+                            android:text="Next"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_16"
+                            app:customFont="@string/font_satoshi_bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/bottom_sheet_assessment_info" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

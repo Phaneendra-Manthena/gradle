@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/individual_control_padding">
+
+    <LinearLayout
+        android:id="@+id/ll_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+        <LinearLayout
+            android:id="@+id/ll_videoPlayer_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/rounded_corners_video"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <VideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_videoPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_videoPlay"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_play_video_new" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_button_bg"
+            android:orientation="vertical">
+
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_selectVideoPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/tap_text_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone"
+                app:customFont="@string/font_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_recorder_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_recorder_uploadTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_startVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_startVideoRecorder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:drawableStart="@drawable/ic_videorecorder_black_24dp"
+                            android:gravity="center"
+                            app:drawableTint="@color/white"
+                            android:padding="@dimen/_5sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/start_recording"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="visible"
+                            app:customFont="@string/font_name" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider" />
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_videoFileUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:drawableTop="@drawable/ic_file_upload_black_24dp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/upload"
+                        android:textColor="@color/display_name_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:customFont="@string/font_name" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_alertTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_mandatory_star_red_24dp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_showText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/keyboard_green"
+            app:customFont="@string/font_name" />
+        <com.bhargo.user.custom.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

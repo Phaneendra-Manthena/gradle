@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_childMainTest"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:layout_margin="@dimen/_5sdp">
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/tvTest"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:textColor="@color/mat_white"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

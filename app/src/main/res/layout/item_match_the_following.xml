@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons_image"
+                android:visibility="gone" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/question"
+                android:textColor="@color/display_name_color"
+                android:textSize="@dimen/_14sdp"
+                app:customFont="@string/font_satoshi_bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_questionParagraphContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/ll_match_the_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/rectangle_border_black"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_mtf_partA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_partATitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Part A"
+                        android:textColor="?attr/bhargo_color_ten"
+                        app:customFont="@string/font_satoshi_bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mtf_partAContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_2sdp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/bhargo_color_ten" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mtf_partB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <com.bhargo.user.custom.CustomTextView
+                        android:id="@+id/tv_partBTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Part B"
+                        android:textColor="?attr/bhargo_color_ten"
+                        app:customFont="@string/font_satoshi_bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mtf_partBContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_onlyAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <!--                <RadioGroup-->
+            <!--        android:id="@+id/rg_container"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="vertical"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

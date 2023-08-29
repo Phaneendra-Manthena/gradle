@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_MainLayout_Check"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/llIndexColumns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_click"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/button_rounded_corners"
+                android:backgroundTint="@color/dblue"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/click_more"
+                android:textColor="@color/mat_white"
+                android:textSize="@dimen/_8sdp"
+
+                app:customFont="@string/font_name" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

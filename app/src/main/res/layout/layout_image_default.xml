@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+
+        <LinearLayout
+            android:id="@+id/ll_tap_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_single_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.bhargo.user.utils.RoundedImageView
+                        android:id="@+id/mainImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible"
+                        app:riv_corner_radius="@dimen/dimen_10" />
+
+                    <com.bhargo.user.utils.TouchImageView
+                        android:id="@+id/mainImageViewZoom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:riv_corner_radius="@dimen/dimen_10" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/ll_Gallery_View"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/galleryViewImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:adjustViewBounds="true"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@color/transparentBlack"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/icons_image"
+                            app:tint="@color/white" />
+
+                        <com.bhargo.user.custom.CustomTextView
+                            android:id="@+id/tv_images_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:padding="@dimen/_2sdp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sliderHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <com.bhargo.user.utils.CustomViewPager
+                        android:id="@+id/viewPagerSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200"
+                        android:layout_gravity="center" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_below="@+id/viewPagerSlider"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:tabBackground="@drawable/indicator_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sliderVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:scrollbars="vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_verticalAlignment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Gray"
+    tools:context=".utils.NetworkNotAvailableActivity">
+    <include
+        android:visibility="gone"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/no_internet_connection" />
+<!--    <user.CustomTextView-->
+<!--        android:layout_below="@+id/iv_no_internet"-->
+<!--        android:id="@+id/tv_no_internet"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:gravity="center"-->
+<!--        android:paddingLeft="@dimen/_5sdp"-->
+<!--        android:text="@string/no_internet_available"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/_14sdp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:customFont="@string/font_name" />-->
+
+<!--
+    <user.CustomButton
+        android:id="@+id/cb_try_again"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_no_internet"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="@color/Red"
+        android:gravity="center"
+        android:text="@string/places_try_again"
+        android:textColor="@color/mat_white"
+        android:textSize="@dimen/_12sdp"
+        app:customFont="@string/font_name_bold" />
+-->
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:background="@drawable/ic_login_bg"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:background="@drawable/semi_rounded_bg"
+            android:layout_height="0dp">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customFont="@string/font_satoshi_bold"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:textSize="28sp"
+                android:text="@string/otp_verification"
+                android:textColor="@color/control_input_text_color"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctv_mobilenumber"
+                    app:customFont="@string/font_satoshi_bold"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:textColor="@color/control_input_text_color"
+                    android:text="@string/mobile_no"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_otpBack"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_5"
+                    android:src="@drawable/ic_num_edit"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp1"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp2"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp3"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp4"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp5"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+                <com.bhargo.user.custom.CustomEditText
+                    android:id="@+id/ce_otp6"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:background="@drawable/rounded_rectangle_otp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    app:customFont="@string/font_name" />
+
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctv_resend_time"
+                app:customFont="@string/font_satoshi"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:enabled="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="@dimen/control_input_text_size"
+                android:textColor="@color/bhargo_color_four"
+                android:text="@string/zero_0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+               android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:orientation="horizontal">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="@string/font_satoshi"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:textColor="@color/control_input_text_color"
+                    android:text="@string/didnt_receive_the_otp"/>
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctv_resend_OTP"
+                    app:customFont="@string/font_satoshi_bold"
+                    android:enabled="false"
+                    android:textSize="@dimen/control_input_text_size"
+                    android:textColor="@color/resend_otp"
+                    android:text="@string/resend_otp"/>
+
+
+
+            </LinearLayout>
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/cb_otp_submit"
+                style="@style/ControlButtonStyle"
+                android:text="@string/verify"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:textSize="@dimen/control_input_text_size"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:layout_marginEnd="@dimen/dimen_40"
+                app:customFont="@string/font_satoshi_bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

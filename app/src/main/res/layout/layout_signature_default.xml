@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_display_name" />
+
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_tap_text"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_120"
+                    android:layout_weight="0.8"
+                    android:padding="@dimen/dimen_5"
+                    android:background="@drawable/rounded_rectangle_default"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.bhargo.user.utils.SignaturePad
+                        android:id="@+id/signature_pad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:penColor="@android:color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_SelectedImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_120"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rectangle_box_signature" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_camera_or_gallery_main"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/layout_camera_or_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/circular_bg_default"
+                        android:gravity="center_horizontal|center_vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_Image"
+                            android:layout_width="@dimen/dimen_40"
+                            android:layout_height="@dimen/dimen_40" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/tv_clearSignature"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5"
+                    android:layout_weight="0.8"
+                    android:gravity="end"
+                    android:text="@string/clear"
+                    android:textColor="@color/display_name_color"
+                    android:textSize="@dimen/control_input_text_size"
+                    app:customFont="@string/font_satoshi" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_error_text" />
+
+    </LinearLayout>
+</LinearLayout>

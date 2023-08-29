@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:background="@drawable/chatdatetext_bg"
+    android:layout_height="wrap_content">
+
+
+    <com.bhargo.user.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/list_item_section_text"
+        android:layout_height="wrap_content"
+        android:text="@string/last_message_date"
+        app:customFont="@string/font_name"
+        android:textAllCaps="true"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

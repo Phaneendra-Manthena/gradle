@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".screens.TestingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_buildjson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build JSON data from the HashMap and JSON schema\n( Json Obj to Json Schema &amp; Json Obj to HashMap)" />
+
+        <Button
+            android:id="@+id/bt_buildxml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build JSON data from the HashMap and JSON schema\n( XML to Json Obj :\nJson Obj to Json Schema &amp; Json Obj to HashMap)" />
+
+        <TextView
+            android:id="@+id/tv_xmltojson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schema:"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tv_schema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Json Obj:"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+
+</ScrollView>

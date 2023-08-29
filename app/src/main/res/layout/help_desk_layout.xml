@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_help_desk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/up_help_desk_one"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctvMGNREGA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/mangrega"
+                android:textColor="@color/mat_white"
+                android:textSize="@dimen/_10sdp"
+                app:customFont="@string/font_name" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/ctvTimings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/timings"
+                android:textSize="@dimen/_12sdp"
+                app:customFont="@string/font_name_semi_bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mat_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctvTollFreeHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/toll_free_hint"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctvTollFree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="1800180999"
+                    android:textColor="@color/LightGrey"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctvPhHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/phone_no_hint"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctvPh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="05224055999"
+                    android:textColor="@color/LightGrey"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctv_sms_watsppApp_hint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/sms_watsapp_hint"
+                    android:textColor="@color/mat_white"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+
+                <com.bhargo.user.custom.CustomTextView
+                    android:id="@+id/ctv_sms_watsppApp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangle_border_white"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="9454465555   9454464999"
+                    android:textColor="@color/LightGrey"
+                    android:textSize="@dimen/_12sdp"
+                    app:customFont="@string/font_name_semi_bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

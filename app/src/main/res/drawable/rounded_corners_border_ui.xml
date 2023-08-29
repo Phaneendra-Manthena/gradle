@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/mat_white" />
+    <!--<solid android:color="#ecf0f1" />-->
+    <!--<solid android:color="#e2ddf1" />-->
+
+    <stroke
+        android:width="@dimen/_1sdp"
+
+    android:color="@color/chat_divider"/>
+<!--    android:color="@color/red" />-->
+
+    <padding
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp" />
+
+    <corners
+        android:radius="@dimen/_10sdp"/>
+        <!--android:bottomLeftRadius="@dimen/_10sdp"-->
+        <!--android:bottomRightRadius="@dimen/_10sdp"-->
+        <!--android:topLeftRadius="@dimen/_10sdp"-->
+        <!--android:topRightRadius="@dimen/_10sdp" />-->
+</shape>

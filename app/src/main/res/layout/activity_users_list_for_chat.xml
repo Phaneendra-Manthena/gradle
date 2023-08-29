@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl_AppsListMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+        <com.bhargo.user.custom.CustomEditText
+            android:id="@+id/cet_usersSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+android:layout_below="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/rounded_corners_border"
+            android:drawableRight="@drawable/quantum_ic_search_grey600_24"
+            android:gravity="start|center_vertical"
+            android:hint="@string/search_usersorgroups"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:visibility="visible"
+            app:customFont="@string/font_name" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/cet_usersSearch"
+    android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/ct_alNoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_records"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:customFont="@string/font_name" />
+
+        <com.bhargo.user.custom.CustomButton
+            android:id="@+id/cb_start_chat"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="@color/Red"
+            android:drawableStart="@drawable/ic_chat_black_24dp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="end|bottom"
+            android:layout_gravity="end|bottom"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+
+android:layout_alignParentEnd="true"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/startchat"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="false"
+            android:textColor="@color/mat_white"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="visible"
+            app:customFont="@string/font_name" />
+</RelativeLayout>
+
+    </LinearLayout>
+
+

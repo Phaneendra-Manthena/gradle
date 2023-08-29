@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg_rounded_corners"
+            android:orientation="vertical">
+
+            <com.bhargo.user.utils.RoundedImageView
+                android:id="@+id/iv_questionParagraph"
+                android:layout_width="match_parent"
+                android:src="@drawable/icons_image"
+                app:riv_corner_radius="@dimen/dimen_10"
+                android:layout_height="wrap_content" />
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/sample_text"
+                android:visibility="gone"
+                android:textColor="@color/control_input_text_color"
+                android:textSize="@dimen/text_size_14"
+                app:customFont="@string/font_satoshi" />
+
+            <LinearLayout
+                android:id="@+id/ll_questionAnswerImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <!-- <RadioGroup-->
+            <!--     android:orientation="vertical"-->
+            <!--     android:id="@+id/rg_container"-->
+            <!--     android:layout_width="match_parent"-->
+            <!--     android:layout_height="wrap_content"/>-->
+            <LinearLayout
+                android:id="@+id/ll_onlyAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

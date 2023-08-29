@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_tap_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/control_default_background_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.bhargo.user.custom.CustomButton
+                android:id="@+id/btn_main"
+                style="@style/ControlButtonStyleDefault"
+                android:background="@drawable/default_button_rounded_corners"
+                android:backgroundTint="?attr/bhargo_color_one"
+                app:customFont="@string/font_satoshi" />
+
+            <ImageView
+                android:id="@+id/iv_main"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/bg_card"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_error_text" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_inside"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_control_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_dynamicLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_10"
+            android:text="@string/tap_here"
+            android:paddingEnd="1dp"
+            android:textColor="@color/control_input_text_color"
+            android:visibility="visible"
+            app:customFont="@string/font_satoshi" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/sectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_tap_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/layout_display_name" />
+
+            <LinearLayout
+                android:id="@+id/layout_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <net.dankito.richtexteditor.android.RichTextEditor
+                        android:id="@+id/text_editor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:padding="@dimen/_8sdp" />
+
+                    <net.dankito.richtexteditor.android.toolbar.AllCommandsEditorToolbar
+                        android:id="@+id/editorToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/layout_error_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

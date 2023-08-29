@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="?attr/bhargo_color_one" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="@dimen/_10sdp"
+        android:right="@dimen/_10sdp"
+        android:top="1dp" />
+    <corners
+        android:radius="5dp"/>
+</shape>

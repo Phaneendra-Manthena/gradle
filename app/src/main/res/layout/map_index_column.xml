@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/columnName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="text_name"
+            android:textSize="@dimen/control_input_text_size"
+            app:customFont="@string/font_satoshi"/>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/columnValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="text_value"
+            android:textColor="?attr/bhargo_color_ten"
+            android:textSize="@dimen/control_input_text_size"
+            app:customFont="@string/font_satoshi" />
+
+            </LinearLayout>
+
+</LinearLayout>

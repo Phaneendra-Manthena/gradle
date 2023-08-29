@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_displayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <com.bhargo.user.custom.CustomTextView
+                android:id="@+id/tv_displayName"
+                style="@style/DisplayTextStyle"
+                android:text="@string/displayName"
+                app:customFont="@string/font_satoshi" />
+            <ImageView
+                android:id="@+id/iv_mandatory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top|center_vertical"
+                android:layout_marginTop="@dimen/display_text_marginTop"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_mandatory_star_red_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_hint"
+            style="@style/HintTextStyle"
+            android:text="@string/hint"
+            android:gravity="center"
+            app:customFont="@string/font_satoshi" />
+
+    </LinearLayout>

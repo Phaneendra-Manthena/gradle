@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontstyle="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_top"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/bhargo_color_one"
+    android:orientation="horizontal"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_circle_appIcon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/bg_circle_user"
+        android:src="@drawable/allapps"
+        android:visibility="gone" />
+
+    <com.bhargo.user.custom.CustomTextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="@string/search"
+        android:textColor="?attr/bhargo_color_twelve"
+        android:textSize="@dimen/control_input_text_size"
+        fontstyle:customFont="@string/font_satoshi_bold" />
+
+    <ImageView
+        android:id="@+id/ib_done"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:tint="@color/red"
+        android:src="@drawable/icon_done"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_25sdp"
+        android:visibility="gone" />
+
+    <!--        android:src="@drawable/ic_settings_black_24dp" />-->
+    <RelativeLayout
+        android:id="@+id/ll_countDownTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ib_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_timer_black_24dp" />
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_countDown"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="@string/app_name"
+            android:layout_toRightOf="@+id/ib_timer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            fontstyle:customFont="@string/font_name_semi_bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_toRightOf="@+id/tv_countDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+        <com.bhargo.user.custom.CustomTextView
+            android:id="@+id/tv_AssessmentSubmit"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_unread_bg"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="@string/submit"
+            android:textColor="@color/mat_white"
+            fontstyle:customFont="@string/font_name_semi_bold" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_cloud_sync_red_24dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_person_32"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/ib_logout"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_exit_to_app_black_24dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ib_settings"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_assessment_reports"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/icon_reports_d"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_filter_list_black_24dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_action_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_gravity="end"
+        android:visibility="gone"/>
+
+
+
+</androidx.appcompat.widget.Toolbar>

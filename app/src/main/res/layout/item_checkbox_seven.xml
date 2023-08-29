@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bhargo.user.custom.CustomCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/tools"
+
+    android:id="@+id/checkbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    grid:layout_columnWeight="1"
+    grid:layout_rowWeight="1"
+    grid:layout_gravity="fill_horizontal"
+    android:backgroundTint="@android:color/transparent"
+    android:gravity="start|center_vertical"
+    android:padding="@dimen/_5sdp"
+    android:text="Check Box"
+    android:textColor="@color/display_name_color"
+    android:textSize="@dimen/_11sdp"
+    app:customFont="@string/font_name" />
+
+

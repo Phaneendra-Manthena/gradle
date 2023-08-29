@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cb_item_layout"
+    android:gravity="center_vertical|center_horizontal"
+    android:outlineAmbientShadowColor="#a4a4aa"
+    android:outlineSpotShadowColor="#716E6E"
+    android:translationZ="5dp"
+    android:background="@drawable/card_bg_rounded_profile"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bhargo.user.custom.CustomCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/RadioButtonDefault"
+        android:layout_margin="@dimen/dimen_5"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/dimen_5"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:button="@drawable/custom_checkbox"
+        android:textColor="@color/control_radio_button_item"
+        android:textSize="@dimen/control_input_text_size"
+        app:customFont="@string/font_satoshi" />
+</LinearLayout>
